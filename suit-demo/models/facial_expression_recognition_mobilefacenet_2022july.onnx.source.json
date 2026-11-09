@@ -1,0 +1,10 @@
+{
+  "model_id": "opencv-zoo/MobileFaceNet-ProgressiveTeacher/2022july",
+  "source": "https://github.com/opencv/opencv_zoo/tree/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/facial_expression_recognition/",
+  "source_commit": "48b10fa505aeb51fbd127fc60a5c660040e823b7",
+  "download_url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/facial_expression_recognition/facial_expression_recognition_mobilefacenet_2022july.onnx",
+  "sha256": "4f61307602fc089ce20488a31d4e4614e3c9753a7d6c41578c854858b183e1a9",
+  "bytes": 4791892,
+  "license_source": "https://raw.githubusercontent.com/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/LICENSE",
+  "use": "apparent expression class research only; observed_only"
+}

@@ -1,0 +1,75 @@
+.av-device {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.av-help, .av-status {
+  margin: 6px 0;
+  font-size: 14px;
+  color: var(--sub);
+}
+.av-settings, .av-inputs, .av-actions, .av-upload {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+.av-settings, .av-actions, .av-upload { margin-top: 12px; }
+.av-settings label, .av-upload label {
+  display: grid;
+  max-width: 100%;
+  gap: 3px;
+  font-size: 14px;
+}
+.av-settings select { max-width: min(100%, 26rem); }
+.av-source { margin: 10px 0 4px; color: #244f7c; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.av-monitor, .av-playback {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+  margin-top: 12px;
+}
+.av-device video {
+  width: min(100%, 32rem);
+  max-height: 17rem;
+  background: #172332;
+  border-radius: 9px;
+}
+.av-device audio { width: min(100%, 32rem); }
+.av-meter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+.av-meter meter { height: 16px; width: min(12rem, 40vw); }
+.av-actions { align-items: center; }
+.av-timer {
+  font-size: 14px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  color: #a22e31;
+}
+.av-timer::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #ab3438;
+}
+.av-status { margin-top: 10px; }
+.av-error { color: #922b21; }
+.av-playback strong { font-size: 14px; overflow-wrap: anywhere; }
+.av-upload { border-top: 1px solid var(--line); padding-top: 12px; }
+.av-upload input { width: min(100%, 23rem); }
+.av-preflight { margin-top: 14px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #f4f8fd; }
+.av-preflight[data-status="fail"] { background: #fff3ee; border-color: #dbb1a1; }
+.av-preflight[data-status="warning"] { background: #fffaec; border-color: #dfcea1; }
+.av-preflight p { margin: 6px 0; }
+.av-preflight blockquote { margin: 8px 0; padding: 8px; background: #fff; border-left: 3px solid #6388b6; }
+.av-confirm { display: flex; align-items: start; gap: 8px; font-size: 14px; }
+.av-confirm input { flex: 0 0 auto; margin-top: 3px; }

@@ -1,0 +1,55 @@
+{
+  "purpose": "simulation",
+  "candidate": "模拟场次 01",
+  "components": {
+    "basic_info": 80,
+    "experience": 75,
+    "potential": 82,
+    "operation": 100
+  },
+  "questions": [
+    {
+      "id": "experience-narration",
+      "title": "经历介绍 · 讲述一次校园项目经历",
+      "capture": "recorded",
+      "answer_seconds": 60,
+      "segments": [
+        {"start": 0, "end": 10, "state": "洋溢"},
+        {"start": 10, "end": 30, "state": "饱满"},
+        {"start": 30, "end": 60, "state": "平和"}
+      ]
+    },
+    {
+      "id": "developing-others-evidence",
+      "title": "成就他人 · 说明一次帮助他人的具体行动",
+      "capture": "recorded",
+      "answer_seconds": 100,
+      "segments": [
+        {"start": 0, "end": 30, "state": "洋溢"},
+        {"start": 30, "end": 70, "state": "饱满"},
+        {"start": 70, "end": 80, "state": "平和"},
+        {"start": 80, "end": 95, "state": "略微 down"},
+        {"start": 95, "end": 100, "state": "非常不好"}
+      ]
+    },
+    {
+      "id": "developing-others-followup",
+      "title": "追问 · 对方后来能独立完成什么",
+      "capture": "recorded",
+      "answer_seconds": 40,
+      "segments": [
+        {"start": 0, "end": 10, "state": "饱满"},
+        {"start": 10, "end": 30, "state": "平和"},
+        {"start": 30, "end": 35, "state": "略微 down"},
+        {"start": 35, "end": 40, "state": "非常不好"}
+      ]
+    },
+    {
+      "id": "sharing-choice",
+      "title": "取舍题 · 选择资源分享方式",
+      "capture": "not_applicable",
+      "answer_seconds": null,
+      "segments": []
+    }
+  ]
+}

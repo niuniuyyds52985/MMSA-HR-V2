@@ -1,0 +1,73 @@
+{
+  "schema_version": "original-au-net-assets.v1",
+  "repository": "jingyang2017/AU-Net",
+  "commit": "d447837d1eb4631ff473ccb61f13aefeb23844cd",
+  "source": "https://github.com/jingyang2017/AU-Net/tree/d447837d1eb4631ff473ccb61f13aefeb23844cd",
+  "files": {
+    "LICENSE": {
+      "bytes": 1066,
+      "git_blob_sha1": "4c273cd439dc9389ede43315dc96d74ef66c4a5a",
+      "sha256": "8c0efe253d290b7484441a663253e66e789973b3c4d562e3814ce7af6add8ec9"
+    },
+    "README.md": {
+      "bytes": 1969,
+      "git_blob_sha1": "fad33d1022c74ed9275afc9e0cc949460cec64cc",
+      "sha256": "e71fbfc41276c2683445acc16c7dc4bc88db0ee268aa4575294fdc46f2b03d8d"
+    },
+    "models/FAN.py": {
+      "bytes": 5605,
+      "git_blob_sha1": "3b3ae37f3d510ce6d8553db280df4b2fcce353a7",
+      "sha256": "8810ac34c222e90bb3c6793bf8958c403c319ad3022b877aab47754be4ed7e2c"
+    },
+    "models/aunet.py": {
+      "bytes": 3221,
+      "git_blob_sha1": "5deeb6ace6f9b2ee416a33bf77ca789ca7c64fd0",
+      "sha256": "9db71b6733232f98d65aed5b15e85de300a8602ad1640e09b5f182e7cec80452"
+    },
+    "models/__init__.py": {
+      "bytes": 0,
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "test.py": {
+      "bytes": 1820,
+      "git_blob_sha1": "72508e3a0c964f9cc53a8d7ef10a670a8fe37d8a",
+      "sha256": "693e3900f1d512daee3c3480c02be68d12124340baa55fd3bde41c91ed23897a"
+    },
+    "demo.ipynb": {
+      "bytes": 11071,
+      "git_blob_sha1": "e9ab8b926877597d49448f632ecafdf46937eb7b",
+      "sha256": "aa52aa6cd56c26978030990cebab1507e91c7cdde727b09e96606a0cbe469f4c"
+    },
+    "models/2dfan2.pth": {
+      "bytes": 48630574,
+      "git_blob_sha1": "02738a66b9420dd15364d7d79f908f0627fb88b4",
+      "sha256": "bb17bc644766d44e019e5d46496195bde6ecf588387d7bf98d587469e9f53eee"
+    },
+    "checkpoints/cross_model.pth": {
+      "bytes": 10684878,
+      "git_blob_sha1": "19745a2ade2f5b8efa9e5dbc26ec44cad1792d96",
+      "sha256": "92ccb9fd95f0880c295ef805f633e23728c2530faeb99836a41aa6c574367eff"
+    }
+  },
+  "total_bytes": 59340204,
+  "license": "Official repository MIT; upstream components and research use documented separately",
+  "selected_head": "cross_model.pth: 15 AU binary-detection outputs from official demo",
+  "labels": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    9,
+    10,
+    12,
+    14,
+    15,
+    17,
+    23,
+    24,
+    25,
+    26
+  ]
+}

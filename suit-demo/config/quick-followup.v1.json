@@ -1,0 +1,14 @@
+{
+  "version": "dictionary-bank.v1",
+  "source": "题库原追问及 question-criteria.zh.v1；以下覆盖模式为开发规则，非题库原词频，也非经标注验证的语义判断。来源词表另以 text-baseline.v1 保留。",
+  "questions": {
+    "leadership_F3_Q1": [
+      {"branch_id":"leadership_F3_Q1_action","criterion_id":"leadership_F3_Q1:coordination","target_evidence":"本人具体协调行动","patterns":["(?:我|本人)(?!没有|没|未|不曾)[^。！？；，\\n]{0,18}(?:分工|分配|沟通|协调|组织|安排|跟进|召集|负责|核对|汇总|拆分|制定)[^。！？；\\n]{3,50}"]},
+      {"branch_id":"leadership_F3_Q1_result","criterion_id":"leadership_F3_Q1:outcome_cost","target_evidence":"结果证据","patterns":["(?:最终|最后|结果|因此|使得)[^。！？；\\n]{2,45}(?:完成|达到|提高|提升|降低|减少|通过|交付|失败|延期|成功|获得|增长|下降)","(?:完成了|提升了|降低了|获得了|按时交付|没有完成)[^。！？；\\n]{0,30}"]},
+      {"branch_id":"leadership_F3_Q1_difficulty","criterion_id":"leadership_F3_Q1:outcome_cost","target_evidence":"主要困难及处理背景","patterns":["(?:困难|难点|冲突|分歧|争执|阻力|不同意|意见不一致|最难)[^。！？；\\n]{2,55}"]}
+    ],
+    "learning_F10_Q2": [
+      {"branch_id":"learning_F10_Q2_boundary","criterion_id":"learning_F10_Q2:effect_boundary","target_evidence":"方法的适用条件与局限","patterns":["(?:不适用|适用于|适合|局限|前提|条件是)[^。！？；\\n]{2,55}","(?:只有|仅当)[^。！？；\\n]{2,30}(?:才|适用)"],"prerequisite_patterns":["(?:我|本人)(?!们|的)[^。！？；，\\n]{0,18}(?:总结|提炼|学到|学会)[^。！？；\\n]{4,60}","(?:方法|规律)(?:是|为|就是|在于)[^。！？；\\n]{4,60}","(?:先|首先)[^。！？；\\n]{2,25}(?:再|然后)[^。！？；\\n]{2,35}"]}
+    ]
+  }
+}

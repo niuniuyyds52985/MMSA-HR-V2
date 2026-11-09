@@ -1,0 +1,32 @@
+# Recorded working versions for the standalone interview/research workbench.
+# PyTorch CPU is installed separately by setup-delivery.ps1 from its official index.
+# The broader legacy Suit environment remains in requirements-local.lock.txt.
+fastapi==0.141.1
+uvicorn==0.54.0
+python-multipart==0.0.32
+requests==2.34.2
+numpy==1.26.4
+opencv-python==4.11.0.86
+Pillow==12.3.0
+openai-whisper==20250625
+librosa==0.11.0
+soundfile==0.14.0
+scipy==1.17.1
+webrtcvad-wheels==2.0.14.post1
+
+# Local v3 ASR acceleration; model assets are installed separately.
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+av==19.0.2
+onnxruntime==1.31.0
+tokenizers==0.23.3
+huggingface-hub==2.3.0
+hf-xet==1.7.0
+httpx2==2.16.0
+httpcore2==2.16.0
+pyyaml==6.0.3
+truststore==0.10.5
+
+# Frozen-version Chinese PDF download; embedded OFL font is shipped with sources.
+reportlab==4.4.9
+pypdf==6.10.0

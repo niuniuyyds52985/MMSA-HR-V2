@@ -1,0 +1,38 @@
+{
+  "package": "funasr",
+  "version": "1.4.24",
+  "upstream": "https://github.com/modelscope/FunASR/tree/main/funasr/models/emotion2vec",
+  "changes": "Relative imports; model registry, generic I/O/inference and export wrappers removed. Network forward and extract_features retained unchanged. speech_emotion.py performs the official inference steps locally.",
+  "files": [
+    {
+      "file": "model.py",
+      "upstream_sha256": "a9967e269646fcbefcacc29b9d4c76c5d03ca055de5b53884be95dafc53e921f",
+      "local_sha256": "7638ba6b716b74bf7a40c94e95080ba097a7fd83ad839aea5383935f82d7fb9f"
+    },
+    {
+      "file": "audio.py",
+      "upstream_sha256": "94c425d23ca096924fdd2157067b2b23a24061dbd9bd9f7e7433e4f3c8cabf44",
+      "local_sha256": "69a40bfc4849ee22034b9e3012d266d16acb011a3fbd54d4a77eaa3e3f2dc223"
+    },
+    {
+      "file": "base.py",
+      "upstream_sha256": "4f2029c6062e3f6ef4d7abbc60f4570b03163e8b5d70b398c99c918b645c00e0",
+      "local_sha256": "ff6be810e007c2fa0f6484082c01280581b1ea68b00d455a9b3da57bd1198412"
+    },
+    {
+      "file": "modules.py",
+      "upstream_sha256": "c146a55986c595d04f727d032bdece3138e1020bafdc09c1aa52b18ca2315305",
+      "local_sha256": "cedb7719d68766523e841cffe28ebec7307c9a6a1e959daad35a23b61a5ee0b2"
+    },
+    {
+      "file": "fairseq_modules.py",
+      "upstream_sha256": "9478c744bc7468df9a7ca3ed299044d18280b6035ac986b7220e3364ad3f3cad",
+      "local_sha256": "9478c744bc7468df9a7ca3ed299044d18280b6035ac986b7220e3364ad3f3cad"
+    },
+    {
+      "file": "timm_modules.py",
+      "upstream_sha256": "2314f00a0820e7b3d80801b78473e63dbd0cf57957d98ddf458265323bd4ad4a",
+      "local_sha256": "2314f00a0820e7b3d80801b78473e63dbd0cf57957d98ddf458265323bd4ad4a"
+    }
+  ]
+}

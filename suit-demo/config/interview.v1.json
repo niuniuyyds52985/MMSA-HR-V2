@@ -1,0 +1,26 @@
+{
+  "version": "interview.v1",
+  "status": "proposed",
+  "policy_version": "validated-content.v1",
+  "rubric_status": "proposed",
+  "max_main": 3,
+  "max_followup": 1,
+  "max_total": 4,
+  "max_attempts_per_round": 5,
+  "decision_wait_seconds": 10,
+  "decision_wait_reason": "Wait at most 10 seconds for validated content evidence; absent provider credentials are explicitly blocked.",
+  "scoring": "validated_content_model_draft_then_human_review",
+  "provenance": {"source": "真才实鉴_Codex执行接手文件_v1.md §§3,7,8", "status": "handoff_snapshot", "bank_file": "question-bank.v1.json", "business_calibration": "not_validated"},
+  "factor_ids": ["leadership", "develop_others", "balance_people_task", "results", "systems_thinking", "adaptability", "feedback", "learning"],
+  "questions": [
+    {"question_id":"leadership_F3_Q1","factor_id":"leadership","text":"请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？","source_cell":"F3","anchors":{"1":"描述显示主要追逐头衔或推卸协调责任，缺少承担的行动","2":"介于1分与3分之间，必须说明证据差异","3":"有主动承担和明确协调动作，能说明基本结果","4":"介于3分与5分之间，必须说明证据差异","5":"持续协调、跟进、兜底，并能说明团队目标、承担代价和复盘调整"}},
+    {"question_id":"results_K6","factor_id":"results","text":"实习期间领导给你定了“一个月拉新1万人”的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？","source_cell":"K6","anchors":{"1":"忽略已给定约束，仅泛泛加大努力，缺乏可执行安排","2":"介于1分与3分之间，必须说明证据差异","3":"能分解剩余目标，提出资源内的具体行动和检查点","4":"介于3分与5分之间，必须说明证据差异","5":"能分析瓶颈、明确优先级、设计验证与调整条件，说明风险和备用路径"}},
+    {"question_id":"learning_F10_Q2","factor_id":"learning","text":"讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？","source_cell":"F10","anchors":{"1":"回答显示只有泛化口号，不能说明学习与行动的联系","2":"介于1分与3分之间，必须说明证据差异","3":"从一次经历提炼方法，并描述在另一任务的应用","4":"介于3分与5分之间，必须说明证据差异","5":"能具体说明提炼的方法、在另一任务中的适配与行动、实际效果，并解释适用条件"}}
+  ],
+  "branches": [
+    {"branch_id":"leadership_F3_Q1_action","parent_question_id":"leadership_F3_Q1","text":"具体做了哪些协调动作？","priority":1,"target_evidence":"本人具体协调行动","source_cell":"F3","review_status":"proposed_dev"},
+    {"branch_id":"leadership_F3_Q1_difficulty","parent_question_id":"leadership_F3_Q1","text":"最难处理的人或事？","priority":3,"target_evidence":"主要困难及处理背景","source_cell":"F3","review_status":"proposed_dev"},
+    {"branch_id":"leadership_F3_Q1_result","parent_question_id":"leadership_F3_Q1","text":"结果如何？","priority":2,"target_evidence":"结果证据","source_cell":"F3","review_status":"proposed_dev"},
+    {"branch_id":"learning_F10_Q2_boundary","parent_question_id":"learning_F10_Q2","text":"如果规律在第二件事上不灵，你会怎么修正？","priority":4,"target_evidence":"方法适用边界的明确检验需要","source_cell":"F10","review_status":"proposed_dev"}
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema_version": "gaze360-assets.v1",
+  "checked_at": "2026-10-26T02:22:13.558594+00:00",
+  "source": "https://github.com/erkil1452/gaze360/tree/546762ef1373dae13569afdfbe501a834040e8c8",
+  "commit": "546762ef1373dae13569afdfbe501a834040e8c8",
+  "files": {
+    "LICENSE.md": {
+      "bytes": 6836,
+      "git_blob_sha1": "43a21e16a3e2dee656e5849b2011cd0034bffa6c",
+      "sha256": "65ec15093ee20feed3d251a8d9dce1216b7e5c7505bdb7637575e9da91193783"
+    },
+    "README.md": {
+      "bytes": 1709,
+      "git_blob_sha1": "15812fcabbbd74b83eb4a8de7e01eef1abb042ab",
+      "sha256": "9c95cfa0700e04285f0f7ce2fae764c85bb98a7b4beea55c668d809d252edaf5"
+    },
+    "code/README.md": {
+      "bytes": 2202,
+      "git_blob_sha1": "29b749d16a2ed050cf5b9f50dd6a4d5993cd562b",
+      "sha256": "48b99273a470c5467ad2cdb18fc439ef366d3aba285d99cf10b6766adbaaf4e4"
+    },
+    "code/model.py": {
+      "bytes": 2077,
+      "git_blob_sha1": "ab6c5a0612d6cbe3d3ffa0b4748cc9c6a3232ca6",
+      "sha256": "29c52f9121f5ac3ecf82ba137a51eaa8aef974b2bf63d04238f209490d88abd5"
+    },
+    "code/resnet.py": {
+      "bytes": 9150,
+      "git_blob_sha1": "c2e64a4c64a96cfd2a33fc0f9d0bffd0466c0dbe",
+      "sha256": "f44d456c52483a8a45771ff37dbbafae977235c7513f1c254b52c1ed0f770aef"
+    },
+    "code/data_loader.py": {
+      "bytes": 2982,
+      "git_blob_sha1": "355dd809d33c98a647c5950077d78fc46b325fdb",
+      "sha256": "9bed2201d2c805035bdbc14f3ae1c4c141d0b5c7303d61a989b8a23f1a795e83"
+    },
+    "code/run.py": {
+      "bytes": 8057,
+      "git_blob_sha1": "365689d80dd8e6631a5b5cd65da575021265757c",
+      "sha256": "6060440b2596eeace762a7363736473bfb0a2bba02fe2c8436f461731f148e00"
+    },
+    "dataset/README.md": {
+      "bytes": 10556,
+      "git_blob_sha1": "908ac129c6bec836e5b260d2fb642a5e77944789",
+      "sha256": "dfcbe9ad2d707e41e5e448eeb7f41cbb04f27db82bc5a9e4d260a49932dab666"
+    },
+    "gaze360_model.pth.tar": {
+      "bytes": 58370849,
+      "git_blob_sha1": "aa079ec2bee6e8fc505d3484c56cdc1613fb8841",
+      "sha256": "415acb32d268d706d9e126429af1135cc6482e6a274e4a2df6c05395c1405257"
+    }
+  },
+  "checkpoint_provenance": "community_backup_with_documented_official_download_script",
+  "download_attempts": [
+    {
+      "url": "https://gaze360.csail.mit.edu/files/gaze360_model.pth.tar",
+      "status": "unavailable",
+      "http_status": 403,
+      "error_type": "HTTPError"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/m01ali/Classroom-Attention-Monitoring-Sys/66d66415ad8c4da88ebd9ba9c8477ac5983b2ec2/models/gaze360_model.pth.tar",
+      "status": "download_verified"
+    }
+  ],
+  "backup_repository": "m01ali/Classroom-Attention-Monitoring-Sys",
+  "backup_commit": "66d66415ad8c4da88ebd9ba9c8477ac5983b2ec2",
+  "backup_download_script_git_blob": "d14d25c830262c49134afd19947274cf9342f281",
+  "official_weight_url": "https://gaze360.csail.mit.edu/files/gaze360_model.pth.tar",
+  "origin_limitation": "Backup repository download script names the official URL. No author checksum available; identical official origin is not independently verified.",
+  "license": "Official Gaze360 non-commercial research-only LICENSE.md. Do not redistribute downloaded code, weights or dataset in the application source package.",
+  "runtime_loading": "weights_only=True on CPU; full strict key/shape check; never run backup application code"
+}

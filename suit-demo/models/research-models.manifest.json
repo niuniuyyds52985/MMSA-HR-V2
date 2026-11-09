@@ -1,0 +1,255 @@
+{
+  "schema_version": "research-model-assets.v1",
+  "adapter_version": "independent-multimodal.v6",
+  "updated_at": "2026-10-26 Asia/Shanghai",
+  "current_status": "Gaze360 and four-category EMOTIC are available as opt-in CPU research modules; default modules unchanged; no scoring or adaptive follow-up input; no automatic reanalysis of existing sessions.",
+  "geometry_schema_version": "face-geometry.v1",
+  "scope": "Local consented simulation and noncommercial method research; observed_only; no scoring or adaptive branching inputs",
+  "choices": {
+    "au": {
+      "model_id": "OpenFace/2.2.0-CLNF",
+      "source": "https://github.com/TadasBaltrusaitis/OpenFace/releases/tag/OpenFace_2.2.0",
+      "archive_sha256": "4201e96f3bc561a0e3a7fa50d2e12ce782b8a685746d63062572cd5296478dec",
+      "license_files": [
+        "openface-2.2.0/Copyright.txt",
+        "openface-2.2.0/OpenFace-license.txt"
+      ],
+      "label_documentation": "https://github.com/TadasBaltrusaitis/OpenFace/wiki/Output-Format",
+      "scale": "17 named AU intensities 0–5 and 18 presences 0/1"
+    },
+    "gaze": {
+      "model_id": "OpenFace/2.2.0-CLNF",
+      "coordinate_documentation": "https://github.com/TadasBaltrusaitis/OpenFace/wiki/Output-Format",
+      "calibration": "not calibrated; explicit frame-size camera intrinsics estimate passed to OpenFace; no screen point or attention inference",
+      "geometry": "68 source 2D landmarks and official 50 mm ray projection from pupil-ring 3D points and gaze vectors; max 180 geometry windows per answer; no interpolation",
+      "geometry_documentation": "https://github.com/TadasBaltrusaitis/OpenFace/blob/OpenFace_2.2.0/lib/local/Utilities/src/Visualizer.cpp"
+    },
+    "expression": {
+      "model_id": "opencv-zoo/MobileFaceNet-ProgressiveTeacher/2022july",
+      "source": "https://github.com/opencv/opencv_zoo/tree/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/facial_expression_recognition/",
+      "sha256": "4f61307602fc089ce20488a31d4e4614e3c9753a7d6c41578c854858b183e1a9",
+      "license": "README declares Apache-2.0; root Apache-2.0 text retained; directory LICENSE link is missing upstream",
+      "labels": [
+        "angry",
+        "disgust",
+        "fearful",
+        "happy",
+        "neutral",
+        "sad",
+        "surprised"
+      ],
+      "interpretation": "model classification of apparent expression; not inner state"
+    },
+    "audio": {
+      "implementation": "WebRTC VAD mode2 + librosa pYIN + deterministic RMS",
+      "new_dependency": "webrtcvad-wheels==2.0.14.post1",
+      "sources": [
+        "https://github.com/wiseman/py-webrtcvad",
+        "https://github.com/daanzu/py-webrtcvad-wheels",
+        "https://librosa.org/doc/main/generated/librosa.pyin.html"
+      ]
+    }
+  },
+  "selection_rationale": {
+    "AU-Net": "Official pinned network/backbone/cross_model now run on CPU as explicitly selected research module au_net. Default OpenFace stays unchanged. YuNet preprocessing differs from upstream face_alignment; no equivalence or validity claim.",
+    "Gaze360": "Official pinned network with a pinned community-preserved checkpoint now runs on CPU as opt-in gaze360. Original endpoint remains 403; no author checksum proves byte identity. YuNet head preprocessing differs from original AlphaPose; single frontal face subset, no full-360-degree or attention claim.",
+    "OpenFace3": "Official issues #9 and #12 leave AU output mapping and gaze coordinates unresolved; use documented OpenFace2 output instead.",
+    "legacy_keras": "Not used; source/label/training license provenance weaker than official OpenCV alternative.",
+    "EMOTIC": "Opt-in emotic uses the officially linked Tandon third-party PyTorch implementation with community-preserved compatible weights. Four original category rows only: Anger, Happiness, Sadness, Surprise; continuous head removed before inference. Context-assisted perceived-emotion research labels, not a facial-only classifier or psychological measurement; no latent-state mapping or composite potential score."
+  },
+  "real_execution_proof": {
+    "path": "local-data/interview-validation/multimodal-live-check.json",
+    "completed_at": "2026-10-24T13:53:38.091967+00:00",
+    "media_sha256": "0c4b2671d2da224c3beda2120b01b4305698349a4ef07f9bfb7c782adbcd593d",
+    "code_sha256": "bc2b6085e9d8b2c8fe3800b5606714788a5841f967a7a2267800263b32d64633",
+    "elapsed_seconds": 19.88,
+    "status": "complete"
+  },
+  "geometry_execution_proof": {
+    "path": "local-data/interview-validation/mm-geometry-v2/check-bac2b926071a4d9ca1c9bd547aa28c9d.json",
+    "completed_at": "2026-10-25T15:42:01.665647+00:00",
+    "code_sha256": "01d91f3074b3cb580e5512140957622e3602c8942e2644f6088745a1c2649df1",
+    "media_sha256": "0c4b2671d2da224c3beda2120b01b4305698349a4ef07f9bfb7c782adbcd593d",
+    "duration_ms": 23333,
+    "elapsed_seconds": 37.827,
+    "valid_geometry_frames": 117,
+    "landmarks_per_valid_frame": 68,
+    "gaze_arrows_per_valid_frame": 2,
+    "status": "complete"
+  },
+  "specified_model_local_audit_20261025": {
+    "scope": "current workspace models, source and related asset records; no whole-disk scan",
+    "AU-Net": "No locally usable AU-Net repository, configured predictor checkpoint or 2dfan2 backbone located; the older rationale refers to official availability, not a verified local inference setup.",
+    "Gaze360": "No locally usable Gaze360 source, model checkpoint or seven-frame inference pipeline located.",
+    "environment": {
+      "torch": "2.14.0+cpu",
+      "cuda_available": false,
+      "torchvision_available": false,
+      "face_alignment_available": false
+    },
+    "action": "Historical initial local inventory; superseded for AU-Net by original_au_net_execution_proof and optional_choices.au_net, and for Gaze360 by gaze360_emotic_execution_proof and optional_choices.gaze360. Original Gaze360 endpoint remains unavailable; community source limitation retained."
+  },
+  "validation_limits": [
+    "One repository English sample verifies real engineering inference, not Chinese-domain criterion validity.",
+    "No human reference annotations yet; no accuracy/F1/ICC claims for this project.",
+    "5 fps sampling is not microexpression capture.",
+    "AU whole-clip normalization and pYIN Viterbi use offline future context.",
+    "Gaze360 and EMOTIC preserved community checkpoints are pinned and hashed; unavailable originals and missing author checksums prevent independent byte-identity confirmation.",
+    "Gaze360 YuNet head crops and EMOTIC MobileNet-SSD person crops differ from upstream AlphaPose and YOLOv3 preprocessing; no original-paper performance reproduction claim.",
+    "Single-person scene only. Multiple faces or persons invalidate the observation; this is not multi-person interview tracking or identity recognition.",
+    "Gaze360 uses three future frames. EMOTIC frozen-image backmarking records later last_input_ms. Neither can be represented as evidence known before the used inputs arrived.",
+    "Four EMOTIC values are unbounded linear scores with checkpoint validation thresholds, not probabilities, intensity or psychological scales; no VAD or other 22 category values are serialized."
+  ],
+  "optional_choices": {
+    "au_net": {
+      "model_id": "jingyang2017/AU-Net/cross_model-15AU",
+      "source": "https://github.com/jingyang2017/AU-Net",
+      "source_commit": "d447837d1eb4631ff473ccb61f13aefeb23844cd",
+      "adapter": "interview_au_net.py",
+      "version": "original-au-net-cpu.v2",
+      "asset_manifest": "original-au-net/assets.json",
+      "inference_assets_total_bytes": 59340204,
+      "installation": "python fetch_original_au_net.py",
+      "default_enabled": false,
+      "status": "explicit_research_route_available",
+      "units": "15 sigmoid activation scores 0..1 and raw logits; not OpenFace 0..5 intensity or calibrated probabilities",
+      "preprocessing_difference": "YuNet bbox/five points replace upstream face_alignment SFD/68 points"
+    },
+    "gaze360": {
+      "model_id": "erkil1452/gaze360/GazeLSTM-community-checkpoint",
+      "source": "https://github.com/erkil1452/gaze360",
+      "source_commit": "546762ef1373dae13569afdfbe501a834040e8c8",
+      "checkpoint_repository": "https://github.com/m01ali/Classroom-Attention-Monitoring-Sys",
+      "checkpoint_commit": "66d66415ad8c4da88ebd9ba9c8477ac5983b2ec2",
+      "checkpoint_sha256": "415acb32d268d706d9e126429af1135cc6482e6a274e4a2df6c05395c1405257",
+      "checkpoint_bytes": 58370849,
+      "adapter": "interview_gaze360.py",
+      "version": "gaze360-cpu.v1",
+      "asset_manifest": "gaze360/assets.json",
+      "installation": "setup-delivery.ps1 -DownloadModels -DownloadGaze360",
+      "default_enabled": false,
+      "status": "explicit_research_route_available",
+      "input": "Seven RGB head crops 224x224 at 8 Hz nearest native frames; no duplicated, padded or interpolated boundary frames",
+      "units": "3D Cartesian direction, yaw/pitch radians, learned symmetric angular interval half-widths in radians; not calibrated probability or screen gaze point",
+      "preprocessing_difference": "YuNet frontal face-expanded head region replaces original AlphaPose head crop; full 360-degree ability not validated",
+      "capture_contract": "Native capture.at_ms and duration_ms with original frame dimensions and head xywh; seven input_captures and actual input_frame_times_ms retained",
+      "origin_limitation": "Official endpoint remains 403. Community download script names original URL; no author checksum establishes identical origin.",
+      "artifact_path": "gaze360/gaze360-{run_id}.json"
+    },
+    "emotic": {
+      "model_id": "Tandon-A/emotic/cdfmlr-preserved-four-categories",
+      "source": "https://github.com/Tandon-A/emotic",
+      "source_commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+      "implementation": "Third-party PyTorch implementation linked by official rkosti/emotic; not original Lua checkpoint",
+      "checkpoint_repository": "https://github.com/cdfmlr/murecom-verse-1",
+      "checkpoint_commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "adapter": "interview_emotic.py",
+      "version": "emotic-context-perception-four.v1",
+      "asset_manifest": "emotic/source.json",
+      "installation": "setup-delivery.ps1 -DownloadModels -DownloadEmotic",
+      "default_enabled": false,
+      "status": "explicit_research_route_available",
+      "input": "Whole RGB context 224x224 plus actual detected person RGB crop 128x128 with upstream normalization",
+      "labels": ["Anger", "Happiness", "Sadness", "Surprise"],
+      "units": "Unbounded raw linear scores, matching validation thresholds and strict score-above-threshold labels; not probabilities or intensity",
+      "output_policy": "Extract four original category-head rows and remove continuous head before inference; exact four-label allowlist on public serialization; no other 22 categories or VAD values in logs, API, persistence, summaries or reports",
+      "preprocessing_difference": "Fixed MobileNet-SSD person detection replaces upstream YOLOv3; exactly one detected person plus shared YuNet multi-face rejection; no full-body visibility guarantee",
+      "capture_contract": "Same native capture.at_ms and duration_ms for person xywh and whole context xywh, in original frame dimensions",
+      "origin_limitation": "Original Tandon Drive returned 404; maintainer acknowledged possible deletion. Pinned community weights cannot be byte-compared to unavailable original release; no author checksum.",
+      "owner_statement": "https://github.com/Tandon-A/emotic/issues/31#issuecomment-2308547548",
+      "artifact_path": "emotic/emotic-{run_id}.json"
+    }
+  },
+  "original_au_net_execution_proof": {
+    "run_id": "891a48f61d9248f0b4fbb482de4fbee5",
+    "module_run_id": "43a53f507a4246a697694fa25ad63e11",
+    "status": "passed",
+    "created_at": "2026-10-25T16:08:10.412670+00:00",
+    "duration_ms": 23333,
+    "summary": {
+      "sampled_windows": 23,
+      "valid_windows": 23,
+      "eligible_windows": 23,
+      "truncated_by_window_limit": false
+    },
+    "elapsed_seconds": 30.605,
+    "module_elapsed_seconds": 27.464,
+    "cpu_process_seconds": 153.484,
+    "peak_process_working_set_bytes": 625790976,
+    "peak_memory_scope": "current isolated Python process lifetime, including imports/model load; Windows working set",
+    "code_sha256": {
+      "interview_au_net.py": "d161de08ddf42b14fef7325b8364c05357c093b04c55d08ce1b80c44e568deef",
+      "interview_multimodal.py": "279e9f753fef7ed25e225908509190513766b91025f6205027e85469fbb8d6ae"
+    },
+    "media_sha256": "0c4b2671d2da224c3beda2120b01b4305698349a4ef07f9bfb7c782adbcd593d",
+    "path": "local-data/interview-validation/original-au-net/check-891a48f61d9248f0b4fbb482de4fbee5.json"
+  },
+  "gaze360_official_resource_audit": {
+    "checked_at": "2026-10-26 Asia/Shanghai",
+    "source": "https://github.com/erkil1452/gaze360",
+    "source_commit": "546762ef1373dae13569afdfbe501a834040e8c8",
+    "official_weights": "http://gaze360.csail.mit.edu/files/gaze360_model.pth.tar",
+    "http_and_https_head_and_range_get": "403 Forbidden in current environment",
+    "checkpoint_bytes": null,
+    "cpu_execution_proof": null,
+    "status": "official_checkpoint_unavailable",
+    "minimal_cpu_plan": "Historical plan now implemented via optional_choices.gaze360; original endpoint audit and its null official-download fields retained.",
+    "current_resolution": "Pinned community-preserved checkpoint passed CPU and HTTP validation; see gaze360_emotic_execution_proof. This does not change the official endpoint 403 result or establish original byte identity.",
+    "license": "Research only; LICENSE.md restricts copying/distribution; do not bundle code/weights into general redistribution packages."
+  },
+  "gaze360_emotic_execution_proof": {
+    "path": "local-data/interview-validation/model-integration-current.json",
+    "checked_at": "2026-10-26T02:37:20.503002+00:00",
+    "run_id": "9f37df6129f94e8aa1d087fec4f26e50",
+    "status": "passed",
+    "duration_ms": 23333,
+    "media_sha256": "0c4b2671d2da224c3beda2120b01b4305698349a4ef07f9bfb7c782adbcd593d",
+    "modules": {
+      "gaze360": {"status": "partial", "valid_windows": 23, "total_windows": 24, "missing_reason": "Last window requires future frames beyond media boundary"},
+      "emotic": {"status": "complete", "valid_windows": 24, "total_windows": 24}
+    },
+    "historical_report_preserved": true,
+    "formal_score_unchanged": true,
+    "request_idempotency": true,
+    "candidate_report_access_denied": true,
+    "migration_artifacts_preserved": 9,
+    "cloud_calls": 0,
+    "elapsed_seconds": 87.406,
+    "scope": "Public repository media, real HTTP, worker subprocess, CPU models, report publication and isolated data restore; not accuracy or psychological measurement validation"
+  },
+  "quality_schema_version": "capture-quality.v2",
+  "synthetic_quality_execution_proof": {
+    "run_id": "925038b7120b49f284d9d0de84be9092",
+    "created_at": "2026-10-25T16:27:13.859044+00:00",
+    "status": "passed",
+    "elapsed_seconds": 24.905,
+    "code_sha256": {
+      "check_multimodal_quality.py": "cd864dfc1bad759dca0c74c9929b0247dd2ebb5fa4e940b695fba510b3314940",
+      "interview_multimodal.py": "8e333650cae88253b13d5b2cabe47933fc610c53015bde13ea4fe80b29bcba54",
+      "interview_au_net.py": "e875fcdc54dfcf6fb7637aa766e7012fb17277a6574063f6d1eeb682d1f450c1"
+    },
+    "path": "local-data/interview-validation/quality-synthetic/925038b7120b49f284d9d0de84be9092/check.json",
+    "checks_passed": 38,
+    "checks_total": 38,
+    "scope": "6 explicit synthetic engineering fixtures, no participant quality accuracy claim",
+    "fixes": [
+      "AU-Net rejects identical temporal input frames",
+      "F0 summary reflects quality-gated output windows",
+      "Offline frozen interval backmark preserves decision last_input_ms"
+    ]
+  },
+  "original_au_net_quality_positive_control": {
+    "run_id": "94f511d938014542b7b3c3c355f10ba3",
+    "schema_version": "original-au-net-cpu.v2",
+    "status": "complete",
+    "summary": {
+      "sampled_windows": 3,
+      "valid_windows": 3,
+      "eligible_windows": 23,
+      "truncated_by_window_limit": true
+    },
+    "elapsed_seconds": 4.048,
+    "code_sha256": "e875fcdc54dfcf6fb7637aa766e7012fb17277a6574063f6d1eeb682d1f450c1",
+    "path": "local-data/interview-validation/original-au-net/au-net-94f511d938014542b7b3c3c355f10ba3.json"
+  }
+}

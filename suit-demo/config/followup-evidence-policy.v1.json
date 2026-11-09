@@ -1,0 +1,48 @@
+{
+  "schema_version": "followup-evidence-policy.v1",
+  "policy_version": "gap-branch.zh.v1",
+  "status": "engineering_constraint_not_measurement_validation",
+  "source": "interview.v2.json branch target_evidence and question-criteria.zh.v1",
+  "questions": {
+    "leadership_F3_Q1": {
+      "gap_types": {
+        "initiative": "leadership_F3_Q1:initiative",
+        "own_coordination_action": "leadership_F3_Q1:coordination",
+        "outcome": "leadership_F3_Q1:outcome_cost",
+        "difficulty_or_tradeoff": "leadership_F3_Q1:outcome_cost",
+        "reflection": "leadership_F3_Q1:reflection"
+      },
+      "branches": {
+        "leadership_F3_Q1_action": {"gap_type": "own_coordination_action", "criterion_id": "leadership_F3_Q1:coordination"},
+        "leadership_F3_Q1_result": {"gap_type": "outcome", "criterion_id": "leadership_F3_Q1:outcome_cost"},
+        "leadership_F3_Q1_difficulty": {"gap_type": "difficulty_or_tradeoff", "criterion_id": "leadership_F3_Q1:outcome_cost"}
+      }
+    },
+    "results_K6": {
+      "gap_types": {
+        "goal_constraint": "results_K6:goal_constraint",
+        "bottleneck_options": "results_K6:bottleneck_options",
+        "plan_checkpoints": "results_K6:plan_checkpoints",
+        "adjustment_risk": "results_K6:adjustment_risk"
+      },
+      "branches": {}
+    },
+    "learning_F10_Q2": {
+      "gap_types": {
+        "experience": "learning_F10_Q2:experience",
+        "learning_method": "learning_F10_Q2:method",
+        "transfer": "learning_F10_Q2:transfer",
+        "transfer_effect": "learning_F10_Q2:effect_boundary",
+        "method_boundary": "learning_F10_Q2:effect_boundary"
+      },
+      "branches": {
+        "learning_F10_Q2_boundary": {
+          "gap_type": "method_boundary",
+          "criterion_id": "learning_F10_Q2:effect_boundary",
+          "prerequisite_criterion_id": "learning_F10_Q2:method",
+          "prerequisite_category": "reflection_transfer"
+        }
+      }
+    }
+  }
+}

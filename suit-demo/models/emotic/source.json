@@ -1,0 +1,136 @@
+{
+  "schema_version": "emotic-assets.v1",
+  "checked_at": "2026-10-26T02:26:18.372567+00:00",
+  "implementation": "Tandon-A/emotic third-party PyTorch implementation linked by rkosti/emotic",
+  "implementation_commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+  "checkpoint_source": "community-preserved Tandon-compatible checkpoint; original release identity cannot be independently compared",
+  "checkpoint_repository": "https://github.com/cdfmlr/murecom-verse-1",
+  "checkpoint_commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+  "original_release_status": "Drive returned HTTP 404 on 2026-10-26; owner acknowledged deletion in issue 31",
+  "owner_statement": "https://github.com/Tandon-A/emotic/issues/31#issuecomment-2308547548",
+  "official_lua_model": "separate architecture; its public OneDrive landing page resolved but download API required authentication; not substituted",
+  "output_allowlist": [
+    "Anger",
+    "Happiness",
+    "Sadness",
+    "Surprise"
+  ],
+  "excluded_outputs": "other 22 categories and all continuous dimensions are not returned or persisted",
+  "license_scope": "Code license texts retained; EMOTIC dataset is non-commercial research/education; weight redistribution permission not inferred from mirror availability",
+  "assets_sha256": {
+    "model_body1.pth": "445b6c3b9fb4ad16725e4816132c223e2607b706a9437656eee344e13add354a",
+    "model_context1.pth": "aa582d2862dd27921791220a0c76a73fc0a70de02d37e2435a7da75856c9e159",
+    "model_emotic1.pth": "2c332ec9ce80a0b2ccf136ed510e92de61285238bb2b3ec642fe9d7f38942444",
+    "val_thresholds.npy": "15bc167e039e7e66c5f9beac162ef9addff838b1283dda3d768e2a5202bf58b2",
+    "mirror-README.md": "d46ecbf86fb1a035f50b9f1b25242ac877e89e27a43a0d3627747a59a622d671",
+    "mirror-LICENSE": "04f9df82406e15b9ee755a9c9022ac84220e993a736947f836ea1d6447221bfb",
+    "upstream-emotic.py": "97da49e46e0f46199335f14819aa7a754732ee2df157849af792c4dc720a43a9",
+    "upstream-inference.py": "8f0f3acfcda5fdae8811c8ff7973681e7941c04d7f1facf45a7139fa327931c3",
+    "upstream-main.py": "f75c29bcd3237a546898208138f7dddecd8dd20b9f56f1da0fe407cf8ec6a4b7",
+    "upstream-LICENSE": "82e30e6f207f630a42ccc05e8653fa30b2d1148f720bc3e67221c0f44c03ce64",
+    "person-deploy.prototxt": "2d180f723b3109e21f8287f6b3c691390d07b60eed998327cd3259ffa0e50608",
+    "person-mobilenet.caffemodel": "52eed8be80522c152a17fb56740de705b79881bde1a167e0e747310523685fc7",
+    "person-LICENSE": "5de433821cfe672af2fca73c3005f48af16121c95f6a11e1031b07807ea59905",
+    "person-README.md": "b7e978ac6fcbdeab6ca68fcc85240ea3c379ee5e97e0e54c88f8714daf648e92"
+  },
+  "assets": {
+    "model_body1.pth": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "emopic/models/model_body1.pth",
+      "git_blob": "ffc6c38db82b454aa3835e56fd4bee496b00b72d",
+      "size": 44792327
+    },
+    "model_context1.pth": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "emopic/models/model_context1.pth",
+      "git_blob": "500701b02a38d13647d5774633cb8b3a6cbceda0",
+      "size": 44792191
+    },
+    "model_emotic1.pth": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "emopic/models/model_emotic1.pth",
+      "git_blob": "7351a8c11688bae804d19518430cb12921943e9d",
+      "size": 1088422
+    },
+    "val_thresholds.npy": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "emopic/results/val_thresholds.npy",
+      "git_blob": "2841bcf42705b18926e5b2e8b4e1164233eafbd8",
+      "size": 232
+    },
+    "mirror-README.md": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "README.md",
+      "git_blob": "da261146be20f16c743b8d96e1deb52cd6ca60fd",
+      "size": 28985
+    },
+    "mirror-LICENSE": {
+      "repository": "cdfmlr/murecom-verse-1",
+      "commit": "bc9e70b6cd5583368e8a995b02dded2f4ae91c54",
+      "path": "LICENSE",
+      "git_blob": "8ef2a4ca4cba0ca524e4c26d3c28adeb5a8e1f9d",
+      "size": 8136
+    },
+    "upstream-emotic.py": {
+      "repository": "Tandon-A/emotic",
+      "commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+      "path": "emotic.py",
+      "git_blob": "29e730f02b8b7486067506dffee27a4c399950e3",
+      "size": 1019
+    },
+    "upstream-inference.py": {
+      "repository": "Tandon-A/emotic",
+      "commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+      "path": "inference.py",
+      "git_blob": "b61d889432a55b1e9c7b7f7b432ff837998058a3",
+      "size": 6479
+    },
+    "upstream-main.py": {
+      "repository": "Tandon-A/emotic",
+      "commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+      "path": "main.py",
+      "git_blob": "47f54bd559e8893608776cb1b271f6c6a870dcb4",
+      "size": 5777
+    },
+    "upstream-LICENSE": {
+      "repository": "Tandon-A/emotic",
+      "commit": "862a1cad48256efeb32fb6ec66046d9a9bd51758",
+      "path": "LICENSE",
+      "git_blob": "ab6cd4162511dea8b8f64ef2951b932a711f61d2",
+      "size": 1073
+    },
+    "person-deploy.prototxt": {
+      "repository": "chuanqi305/MobileNet-SSD",
+      "commit": "bb17b6c3eef36d80be441ae8e5339be66e8e3b7a",
+      "path": "deploy.prototxt",
+      "git_blob": "88021a94bca5c22753a23664d388d4922b2186bb",
+      "size": 44667
+    },
+    "person-mobilenet.caffemodel": {
+      "repository": "chuanqi305/MobileNet-SSD",
+      "commit": "bb17b6c3eef36d80be441ae8e5339be66e8e3b7a",
+      "path": "mobilenet_iter_73000.caffemodel",
+      "git_blob": "253e5012dd6a17666fd7ae16cfa14a6860280ff7",
+      "size": 23306119
+    },
+    "person-LICENSE": {
+      "repository": "chuanqi305/MobileNet-SSD",
+      "commit": "bb17b6c3eef36d80be441ae8e5339be66e8e3b7a",
+      "path": "LICENSE",
+      "git_blob": "2e1b91c92dfedb16126e6d376ace80cda4e2204a",
+      "size": 1067
+    },
+    "person-README.md": {
+      "repository": "chuanqi305/MobileNet-SSD",
+      "commit": "bb17b6c3eef36d80be441ae8e5339be66e8e3b7a",
+      "path": "README.md",
+      "git_blob": "3d6f513af5f1384db86f5e6cc17b6f6a6680ef78",
+      "size": 3242
+    }
+  }
+}

@@ -1,0 +1,1152 @@
+{
+  "schema_version": "text-baseline-config.v1",
+  "algorithm_version": "literal-context.zh.v1",
+  "purpose": "模拟测试／方法验证；词频对照，不参与正式评分或追问",
+  "source": {
+    "file": "question-bank.v1.json",
+    "bank_version": "mt_bank_v1_source_20261024",
+    "workbook_sha256": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+    "status": "原表 I/J 列是提示词清单，不是本项目实测高频词"
+  },
+  "matching": {
+    "method": "case-sensitive exact phrase; non-overlapping occurrences per term; overlaps between distinct terms retained",
+    "normalization": "none",
+    "stopwords": [],
+    "denominator": "Unicode alphanumeric code points; occurrences per 100 such code points; null when denominator is zero"
+  },
+  "context_rules": {
+    "version": "context-flags.zh.v1",
+    "negators": [
+      "并没有",
+      "从来没有",
+      "没有",
+      "不是",
+      "并未",
+      "不能",
+      "不会",
+      "不曾",
+      "不愿",
+      "无需",
+      "不",
+      "没",
+      "未",
+      "别"
+    ],
+    "negation_prefix_codepoints": 8,
+    "reporters": [
+      "他说",
+      "她说",
+      "他们说",
+      "老师说",
+      "同学说",
+      "队友说",
+      "别人说",
+      "领导说",
+      "同事说",
+      "有人说",
+      "他会",
+      "她会",
+      "他们会",
+      "队友会",
+      "老师会"
+    ],
+    "past_markers": [
+      "以前",
+      "过去",
+      "曾经",
+      "之前",
+      "起初",
+      "原来"
+    ],
+    "later_markers": [
+      "后来",
+      "现在",
+      "之后",
+      "随后",
+      "如今"
+    ],
+    "clause_delimiters": "，,。.!！?？;；\n",
+    "quoted_pairs": [
+      [
+        "“",
+        "”"
+      ],
+      [
+        "「",
+        "」"
+      ],
+      [
+        "『",
+        "』"
+      ],
+      [
+        "\"",
+        "\""
+      ]
+    ]
+  },
+  "limitations": [
+    "仅标记字面上下文线索，不能替代语义理解或事实核实",
+    "词语堆砌仍产生原始命中；单词单回答去重计数另列",
+    "没有命中不表示能力不足，同义表达可被遗漏",
+    "否定、转述、时间处理是固定启发式规则，可能误判，不改变正式评分"
+  ],
+  "factors": [
+    {
+      "factor_id": "leadership",
+      "name": "领导意愿",
+      "terms": [
+        {
+          "term_id": "leadership:positive_prompt:1",
+          "phrase": "我主动牵头",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:2",
+          "phrase": "分工",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:3",
+          "phrase": "协调",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:4",
+          "phrase": "兜底",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:5",
+          "phrase": "对结果负责",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:6",
+          "phrase": "复盘",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:7",
+          "phrase": "扛下来",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:8",
+          "phrase": "我站出来",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:9",
+          "phrase": "跟进进度",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:10",
+          "phrase": "统一目标",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:positive_prompt:11",
+          "phrase": "带着大家一起",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:1",
+          "phrase": "老师让我当",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:2",
+          "phrase": "他们都不行",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:3",
+          "phrase": "我指挥他们",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:4",
+          "phrase": "反正最后是我做的",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:5",
+          "phrase": "图个头衔",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:6",
+          "phrase": "挂名",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:7",
+          "phrase": "我说了算",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        },
+        {
+          "term_id": "leadership:risk_prompt:8",
+          "phrase": "没人听就算了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J3"
+        }
+      ]
+    },
+    {
+      "factor_id": "develop_others",
+      "name": "成就他人",
+      "terms": [
+        {
+          "term_id": "develop_others:positive_prompt:1",
+          "phrase": "教他方法",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:2",
+          "phrase": "陪他过一遍",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:3",
+          "phrase": "他后来能独立",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:4",
+          "phrase": "发挥他擅长的",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:5",
+          "phrase": "把机会让给他",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:6",
+          "phrase": "拆给他看",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:7",
+          "phrase": "让他主讲",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:8",
+          "phrase": "帮他争取资源",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:9",
+          "phrase": "每周带教",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:positive_prompt:10",
+          "phrase": "给他反馈",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:1",
+          "phrase": "我帮他做完",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:2",
+          "phrase": "他太菜了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:3",
+          "phrase": "没必要浪费时间",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:4",
+          "phrase": "凭什么教他",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:5",
+          "phrase": "教会徒弟饿死师傅",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:6",
+          "phrase": "他自己不学",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:7",
+          "phrase": "直接替他做",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        },
+        {
+          "term_id": "develop_others:risk_prompt:8",
+          "phrase": "带不动",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J4"
+        }
+      ]
+    },
+    {
+      "factor_id": "balance_people_task",
+      "name": "平衡人际与任务",
+      "terms": [
+        {
+          "term_id": "balance_people_task:positive_prompt:1",
+          "phrase": "先听他的顾虑",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:2",
+          "phrase": "对齐目标",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:3",
+          "phrase": "会后单独聊",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:4",
+          "phrase": "折中方案",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:5",
+          "phrase": "对事不对人",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:6",
+          "phrase": "换位思考",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:7",
+          "phrase": "私下沟通",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:8",
+          "phrase": "给个台阶",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:9",
+          "phrase": "先说共同点",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:positive_prompt:10",
+          "phrase": "事也要办成",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:1",
+          "phrase": "直接怼回去",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:2",
+          "phrase": "随便他们",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:3",
+          "phrase": "我不管过程只要结果",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:4",
+          "phrase": "懒得解释",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:5",
+          "phrase": "忍不了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:6",
+          "phrase": "大不了散伙",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:7",
+          "phrase": "我退出",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        },
+        {
+          "term_id": "balance_people_task:risk_prompt:8",
+          "phrase": "爱干不干",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J5"
+        }
+      ]
+    },
+    {
+      "factor_id": "results",
+      "name": "结果导向",
+      "terms": [
+        {
+          "term_id": "results:positive_prompt:1",
+          "phrase": "倒排计划",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:2",
+          "phrase": "试了三种办法",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:3",
+          "phrase": "提前同步风险",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:4",
+          "phrase": "差了5%但我",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:5",
+          "phrase": "每周对进度",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:6",
+          "phrase": "卡住就换路径",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:7",
+          "phrase": "主动争取资源",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:8",
+          "phrase": "千方百计",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:positive_prompt:9",
+          "phrase": "提前两天交付",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I6"
+        },
+        {
+          "term_id": "results:risk_prompt:1",
+          "phrase": "没办法",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:2",
+          "phrase": "资源不够所以",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:3",
+          "phrase": "后来就算了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:4",
+          "phrase": "差不多就行",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:5",
+          "phrase": "看情况吧",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:6",
+          "phrase": "尽力了（无细节）",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:7",
+          "phrase": "运气不好",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        },
+        {
+          "term_id": "results:risk_prompt:8",
+          "phrase": "目标定太高",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J6"
+        }
+      ]
+    },
+    {
+      "factor_id": "systems_thinking",
+      "name": "全局思维",
+      "terms": [
+        {
+          "term_id": "systems_thinking:positive_prompt:1",
+          "phrase": "上游/下游",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:2",
+          "phrase": "对整体的影响",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:3",
+          "phrase": "从业务目标倒推",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:4",
+          "phrase": "利益相关方",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:5",
+          "phrase": "局部和全局",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:6",
+          "phrase": "牵一发动全身",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:7",
+          "phrase": "系统地看",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:8",
+          "phrase": "价值链",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:9",
+          "phrase": "短期指标与长期品牌",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:positive_prompt:10",
+          "phrase": "站在公司角度",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:1",
+          "phrase": "领导让做的",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:2",
+          "phrase": "我只负责我这块",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:3",
+          "phrase": "不清楚整体",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:4",
+          "phrase": "跟我没关系",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:5",
+          "phrase": "那是别的部门的事",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:6",
+          "phrase": "想那么多干嘛",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        },
+        {
+          "term_id": "systems_thinking:risk_prompt:7",
+          "phrase": "反正我做完就行",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J7"
+        }
+      ]
+    },
+    {
+      "factor_id": "adaptability",
+      "name": "适应力",
+      "terms": [
+        {
+          "term_id": "adaptability:positive_prompt:1",
+          "phrase": "先保核心目标",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:2",
+          "phrase": "B计划",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:3",
+          "phrase": "边做边调",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:4",
+          "phrase": "快速验证",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:5",
+          "phrase": "重排优先级",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:6",
+          "phrase": "先跑起来再说",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:7",
+          "phrase": "及时止损",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:8",
+          "phrase": "小步快跑",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:9",
+          "phrase": "先澄清假设",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:positive_prompt:10",
+          "phrase": "接受不完美",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:1",
+          "phrase": "太离谱了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:2",
+          "phrase": "等政策明确再说",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:3",
+          "phrase": "我就先放着",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:4",
+          "phrase": "为什么又改",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:5",
+          "phrase": "早干嘛去了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:6",
+          "phrase": "等通知",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:7",
+          "phrase": "我按原计划做",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        },
+        {
+          "term_id": "adaptability:risk_prompt:8",
+          "phrase": "改来改去没法干",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J8"
+        }
+      ]
+    },
+    {
+      "factor_id": "feedback",
+      "name": "接纳反馈",
+      "terms": [
+        {
+          "term_id": "feedback:positive_prompt:1",
+          "phrase": "我追问了具体哪里",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:2",
+          "phrase": "后来我改成",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:3",
+          "phrase": "三个月后他说好转了",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:4",
+          "phrase": "定期请人挑刺",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:5",
+          "phrase": "复盘会",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:6",
+          "phrase": "主动问意见",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:7",
+          "phrase": "记下来逐条改",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:8",
+          "phrase": "验证效果",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:9",
+          "phrase": "先感谢再澄清",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:positive_prompt:10",
+          "phrase": "反馈清单",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:1",
+          "phrase": "他不懂实际情况",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:2",
+          "phrase": "表面答应",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:3",
+          "phrase": "懒得争",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:4",
+          "phrase": "其实我没改",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:5",
+          "phrase": "那是偏见",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:6",
+          "phrase": "他说他的我做我的",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:7",
+          "phrase": "我都接受（无实例）",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        },
+        {
+          "term_id": "feedback:risk_prompt:8",
+          "phrase": "没必要当真",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J9"
+        }
+      ]
+    },
+    {
+      "factor_id": "learning",
+      "name": "学习敏锐度",
+      "terms": [
+        {
+          "term_id": "learning:positive_prompt:1",
+          "phrase": "先跑通最小闭环",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:2",
+          "phrase": "拆解",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:3",
+          "phrase": "请教了三个人",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:4",
+          "phrase": "复盘出三条规律",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:5",
+          "phrase": "后来用在",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:6",
+          "phrase": "迁移到",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:7",
+          "phrase": "找标杆",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:8",
+          "phrase": "边干边学",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:9",
+          "phrase": "两周上手",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:10",
+          "phrase": "提炼方法",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:positive_prompt:11",
+          "phrase": "快速迭代",
+          "source_label": "positive_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "I10"
+        },
+        {
+          "term_id": "learning:risk_prompt:1",
+          "phrase": "我报了个班",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:2",
+          "phrase": "还没机会用",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:3",
+          "phrase": "主要是运气不好",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:4",
+          "phrase": "看了很多教程",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:5",
+          "phrase": "学完就忘了",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:6",
+          "phrase": "没时间实践",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:7",
+          "phrase": "理论都懂",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        },
+        {
+          "term_id": "learning:risk_prompt:8",
+          "phrase": "一学就会一做就废",
+          "source_label": "risk_prompt",
+          "source_sheet": "八因子提问清单",
+          "source_cell": "J10"
+        }
+      ]
+    }
+  ]
+}

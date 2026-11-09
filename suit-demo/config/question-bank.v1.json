@@ -1,0 +1,2926 @@
+{
+  "schema_version": "question-bank.v1",
+  "bank_version": "mt_bank_v1_source_20261024",
+  "title": "管理培训生八因子原始题库",
+  "extracted_on": "2026-10-24",
+  "source_priority": "原始xlsx单元格为题库内容权威来源；接手文件仅用于核对ID和proposed短卷配置。",
+  "sources": [
+    {
+      "source_id": "question_workbook",
+      "path": "面试方法对比与效度数据(1).xlsx",
+      "sha256": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "size_bytes": 24009,
+      "extraction": "openpyxl read only extraction; source workbook not saved"
+    },
+    {
+      "source_id": "role_description",
+      "path": "管理培训生岗位说明(1).docx",
+      "sha256": "6e1c09ae1397ca9b62d4544ec4d1c92753474fe34a29ff7fa0fabd16c56f754b",
+      "size_bytes": 49875,
+      "extraction": "ZIP word/document.xml text; no layout audit"
+    },
+    {
+      "source_id": "handoff",
+      "path": "D:\\从chrome上下载的\\真才实鉴_Codex执行接手文件_v1.md",
+      "sha256": "6e4d56b11a8cb9047d4676b6da236cb56fe37f47dfd7c7190682a804053f95d3",
+      "sections": [
+        "3",
+        "Appendix A",
+        "Appendix B"
+      ],
+      "status": "provided_requirement_reference_not_approval"
+    }
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "leadership_orientation",
+      "name": "领导倾向"
+    },
+    {
+      "dimension_id": "business_drive",
+      "name": "业务驱动"
+    },
+    {
+      "dimension_id": "growth",
+      "name": "成长性"
+    }
+  ],
+  "factors": [
+    {
+      "factor_id": "leadership",
+      "dimension_id": "leadership_orientation",
+      "name": "领导意愿",
+      "dimension_name": "领导倾向",
+      "source_sheet": "八因子提问清单",
+      "source_row": 3,
+      "source_cells": {
+        "A3": "领导倾向",
+        "B3": "领导意愿",
+        "C3": "是否愿意承担影响他人、协调工作、对团队结果负责的角色。不是单看外向或想升职。",
+        "D3": "领导动机理论MTL（Chan & Drasgow, 2001）\n领导涌现元分析（Judge et al., 2002）\n潜力识别动机维度（Silzer & Church, 2009）",
+        "E3": "是否主动承担过牵头、协调、兜底的角色\n动机是\"对团队结果负责\"还是\"想要头衔\"\n对领导角色的代价（协调冲突、替团队扛责）是否有真实认知",
+        "F3": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+        "G3": "事例具体，有分工、跟进、兜底、复盘动作\n关注\"事情做成了、团队变好了\"而非个人风头\n能坦诚讲出牵头代价及取舍",
+        "H3": "把领导等同于头衔或成绩好\n抢功贬低队友（\"他们都不行，最后都是我做的\"）\n所有事例都是\"老师指定的\"",
+        "I3": "我主动牵头\n分工\n协调\n兜底\n对结果负责\n复盘\n扛下来\n我站出来\n跟进进度\n统一目标\n带着大家一起",
+        "J3": "老师让我当\n他们都不行\n我指挥他们\n反正最后是我做的\n图个头衔\n挂名\n我说了算\n没人听就算了",
+        "K3": "假设你带领5人小组做市场调研，截止前3天发现两名成员进度严重落后且互相推诿，组里气氛开始对立。你接下来72小时会做什么？",
+        "L3": "是否先对齐目标与事实（而非先追责）\n有无具体分工与跟进机制\n是否愿意自己兜底\n如何处理对立情绪"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "是否愿意承担影响他人、协调工作、对团队结果负责的角色。不是单看外向或想升职。",
+      "definition_source_cell": "C3",
+      "theoretical_sources": "领导动机理论MTL（Chan & Drasgow, 2001）\n领导涌现元分析（Judge et al., 2002）\n潜力识别动机维度（Silzer & Church, 2009）",
+      "theoretical_sources_source_cell": "D3",
+      "assessment_content": "是否主动承担过牵头、协调、兜底的角色\n动机是\"对团队结果负责\"还是\"想要头衔\"\n对领导角色的代价（协调冲突、替团队扛责）是否有真实认知",
+      "assessment_content_source_cell": "E3",
+      "positive_characteristics": "事例具体，有分工、跟进、兜底、复盘动作\n关注\"事情做成了、团队变好了\"而非个人风头\n能坦诚讲出牵头代价及取舍",
+      "positive_characteristics_source_cell": "G3",
+      "risk_signals": "把领导等同于头衔或成绩好\n抢功贬低队友（\"他们都不行，最后都是我做的\"）\n所有事例都是\"老师指定的\"",
+      "risk_signals_source_cell": "H3",
+      "positive_prompts": "我主动牵头\n分工\n协调\n兜底\n对结果负责\n复盘\n扛下来\n我站出来\n跟进进度\n统一目标\n带着大家一起",
+      "positive_prompts_source_cell": "I3",
+      "risk_prompts": "老师让我当\n他们都不行\n我指挥他们\n反正最后是我做的\n图个头衔\n挂名\n我说了算\n没人听就算了",
+      "risk_prompts_source_cell": "J3",
+      "situational_observations": "是否先对齐目标与事实（而非先追责）\n有无具体分工与跟进机制\n是否愿意自己兜底\n如何处理对立情绪",
+      "situational_observations_source_cell": "L3"
+    },
+    {
+      "factor_id": "develop_others",
+      "dimension_id": "leadership_orientation",
+      "name": "成就他人",
+      "dimension_name": "领导倾向",
+      "source_sheet": "八因子提问清单",
+      "source_row": 4,
+      "source_cells": {
+        "A4": "领导倾向",
+        "B4": "成就他人",
+        "C4": "是否愿意帮助别人发挥长处、成长并取得成果，而不只是自己做得出色。",
+        "D4": "变革型领导\"个性化关怀\"（Bass, 1985；Bass & Riggio, 2006）\n服务型领导（Greenleaf, 1970；Liden et al., 2008）\n管理者教练行为（Ellinger & Bostrom, 1999）",
+        "E4": "是否有\"让别人变得更好\"的真实行为记录\n帮助时是\"授人以渔\"还是\"替他做完\"\n面对竞争关系是否仍愿意成就对方",
+        "F4": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+        "G4": "能讲出\"教方法\"而非\"代劳\"的过程\n能具体描述对方的前后变化\n对\"帮助他人可能被超越\"有成熟看法",
+        "H4": "所谓帮助实为代劳\n居高临下贬损被帮助者\n明确不愿在竞争场景分享且认为理所当然",
+        "I4": "教他方法\n陪他过一遍\n他后来能独立\n发挥他擅长的\n把机会让给他\n拆给他看\n让他主讲\n帮他争取资源\n每周带教\n给他反馈",
+        "J4": "我帮他做完\n他太菜了\n没必要浪费时间\n凭什么教他\n教会徒弟饿死师傅\n他自己不学\n直接替他做\n带不动",
+        "K4": "你组里有一位能力很强的成员，但习惯单打独斗、从不带新人，导致新人成长慢、团队过度依赖他。作为组长，你会怎么处理？",
+        "L4": "能否既保护高绩效者积极性，又设计机制让其经验沉淀给他人（结对、分享会、带教目标）\n避免\"批评强者\"或\"放任不管\"两个极端"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "是否愿意帮助别人发挥长处、成长并取得成果，而不只是自己做得出色。",
+      "definition_source_cell": "C4",
+      "theoretical_sources": "变革型领导\"个性化关怀\"（Bass, 1985；Bass & Riggio, 2006）\n服务型领导（Greenleaf, 1970；Liden et al., 2008）\n管理者教练行为（Ellinger & Bostrom, 1999）",
+      "theoretical_sources_source_cell": "D4",
+      "assessment_content": "是否有\"让别人变得更好\"的真实行为记录\n帮助时是\"授人以渔\"还是\"替他做完\"\n面对竞争关系是否仍愿意成就对方",
+      "assessment_content_source_cell": "E4",
+      "positive_characteristics": "能讲出\"教方法\"而非\"代劳\"的过程\n能具体描述对方的前后变化\n对\"帮助他人可能被超越\"有成熟看法",
+      "positive_characteristics_source_cell": "G4",
+      "risk_signals": "所谓帮助实为代劳\n居高临下贬损被帮助者\n明确不愿在竞争场景分享且认为理所当然",
+      "risk_signals_source_cell": "H4",
+      "positive_prompts": "教他方法\n陪他过一遍\n他后来能独立\n发挥他擅长的\n把机会让给他\n拆给他看\n让他主讲\n帮他争取资源\n每周带教\n给他反馈",
+      "positive_prompts_source_cell": "I4",
+      "risk_prompts": "我帮他做完\n他太菜了\n没必要浪费时间\n凭什么教他\n教会徒弟饿死师傅\n他自己不学\n直接替他做\n带不动",
+      "risk_prompts_source_cell": "J4",
+      "situational_observations": "能否既保护高绩效者积极性，又设计机制让其经验沉淀给他人（结对、分享会、带教目标）\n避免\"批评强者\"或\"放任不管\"两个极端",
+      "situational_observations_source_cell": "L4"
+    },
+    {
+      "factor_id": "balance_people_task",
+      "dimension_id": "leadership_orientation",
+      "name": "平衡人际与任务",
+      "dimension_name": "领导倾向",
+      "source_sheet": "八因子提问清单",
+      "source_row": 5,
+      "source_cells": {
+        "A5": "领导倾向",
+        "B5": "平衡人际与任务",
+        "C5": "能否既推动目标和进度，也照顾沟通、合作和关系。",
+        "D5": "领导行为双维度理论（俄亥俄州立研究，定规×关怀；Fleishman, 1953）\n管理方格理论（Blake & Mouton, 1964）\n冲突处理策略模型（Thomas-Kilmann, 1974）",
+        "E5": "面对\"事\"与\"人\"的张力时两头兼顾还是牺牲一端\n是否有坚持正确做法同时维护关系的具体沟通策略\n对冲突是回避、硬刚还是有策略地面对",
+        "F5": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+        "G5": "不回避冲突也不牺牲目标，有具体沟通策略（私下沟通、先听顾虑、用事实对齐）\n结果与关系都有交代\n知道自己在哪端偏科并有矫正动作",
+        "H5": "极端任务导向（\"我只看结果\"）\n极端关系导向（\"不想得罪人就算了\"）\n把分歧上升为对人的评价",
+        "I5": "先听他的顾虑\n对齐目标\n会后单独聊\n折中方案\n对事不对人\n换位思考\n私下沟通\n给个台阶\n先说共同点\n事也要办成",
+        "J5": "直接怼回去\n随便他们\n我不管过程只要结果\n懒得解释\n忍不了\n大不了散伙\n我退出\n爱干不干",
+        "K5": "和你关系最好的一位同事负责的部分质量不达标，返工会直接影响他本月绩效评价；不返工则拖累整个项目交付。你会怎么做？会不会告诉他？",
+        "L5": "是否直面问题（不当老好人）\n沟通方式（私下/公开、对事/对人）\n是否提供补救支持而非单纯告状或包庇"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "能否既推动目标和进度，也照顾沟通、合作和关系。",
+      "definition_source_cell": "C5",
+      "theoretical_sources": "领导行为双维度理论（俄亥俄州立研究，定规×关怀；Fleishman, 1953）\n管理方格理论（Blake & Mouton, 1964）\n冲突处理策略模型（Thomas-Kilmann, 1974）",
+      "theoretical_sources_source_cell": "D5",
+      "assessment_content": "面对\"事\"与\"人\"的张力时两头兼顾还是牺牲一端\n是否有坚持正确做法同时维护关系的具体沟通策略\n对冲突是回避、硬刚还是有策略地面对",
+      "assessment_content_source_cell": "E5",
+      "positive_characteristics": "不回避冲突也不牺牲目标，有具体沟通策略（私下沟通、先听顾虑、用事实对齐）\n结果与关系都有交代\n知道自己在哪端偏科并有矫正动作",
+      "positive_characteristics_source_cell": "G5",
+      "risk_signals": "极端任务导向（\"我只看结果\"）\n极端关系导向（\"不想得罪人就算了\"）\n把分歧上升为对人的评价",
+      "risk_signals_source_cell": "H5",
+      "positive_prompts": "先听他的顾虑\n对齐目标\n会后单独聊\n折中方案\n对事不对人\n换位思考\n私下沟通\n给个台阶\n先说共同点\n事也要办成",
+      "positive_prompts_source_cell": "I5",
+      "risk_prompts": "直接怼回去\n随便他们\n我不管过程只要结果\n懒得解释\n忍不了\n大不了散伙\n我退出\n爱干不干",
+      "risk_prompts_source_cell": "J5",
+      "situational_observations": "是否直面问题（不当老好人）\n沟通方式（私下/公开、对事/对人）\n是否提供补救支持而非单纯告状或包庇",
+      "situational_observations_source_cell": "L5"
+    },
+    {
+      "factor_id": "results",
+      "dimension_id": "business_drive",
+      "name": "结果导向",
+      "dimension_name": "业务驱动",
+      "source_sheet": "八因子提问清单",
+      "source_row": 6,
+      "source_cells": {
+        "A6": "业务驱动",
+        "B6": "结果导向",
+        "C6": "是否持续盯住目标，遇到障碍时还能想办法把事情做成。它关注的不只是已有业绩数字。",
+        "D6": "成就需要理论（McClelland, 1961）\n目标设定理论（Locke & Latham, 1990/2002）\n坚毅Grit（Duckworth et al., 2007）",
+        "E6": "目标是否清晰可量化\n遇到障碍时多路径尝试还是调整目标/放弃/归因外部\n对未达成的结果是否诚实、有无补救复盘",
+        "F6": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+        "G6": "目标有数字有截止时间\n障碍具体\n2种以上尝试路径\n主动同步风险而非最后一刻暴露\n对失败诚实并能量化差距",
+        "H6": "目标模糊无法量化\n一遇困难就调整目标且视为理所当然\n失败全部归因外部",
+        "I6": "倒排计划\n试了三种办法\n提前同步风险\n差了5%但我\n每周对进度\n卡住就换路径\n主动争取资源\n千方百计\n提前两天交付",
+        "J6": "没办法\n资源不够所以\n后来就算了\n差不多就行\n看情况吧\n尽力了（无细节）\n运气不好\n目标定太高",
+        "K6": "实习期间领导给你定了\"一个月拉新1万人\"的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？",
+        "L6": "先做归因分析还是先喊难\n能否提出低成本替代路径（渠道置换、社群裂变、异业合作）\n是否主动与领导校准目标而非默默躺平"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "是否持续盯住目标，遇到障碍时还能想办法把事情做成。它关注的不只是已有业绩数字。",
+      "definition_source_cell": "C6",
+      "theoretical_sources": "成就需要理论（McClelland, 1961）\n目标设定理论（Locke & Latham, 1990/2002）\n坚毅Grit（Duckworth et al., 2007）",
+      "theoretical_sources_source_cell": "D6",
+      "assessment_content": "目标是否清晰可量化\n遇到障碍时多路径尝试还是调整目标/放弃/归因外部\n对未达成的结果是否诚实、有无补救复盘",
+      "assessment_content_source_cell": "E6",
+      "positive_characteristics": "目标有数字有截止时间\n障碍具体\n2种以上尝试路径\n主动同步风险而非最后一刻暴露\n对失败诚实并能量化差距",
+      "positive_characteristics_source_cell": "G6",
+      "risk_signals": "目标模糊无法量化\n一遇困难就调整目标且视为理所当然\n失败全部归因外部",
+      "risk_signals_source_cell": "H6",
+      "positive_prompts": "倒排计划\n试了三种办法\n提前同步风险\n差了5%但我\n每周对进度\n卡住就换路径\n主动争取资源\n千方百计\n提前两天交付",
+      "positive_prompts_source_cell": "I6",
+      "risk_prompts": "没办法\n资源不够所以\n后来就算了\n差不多就行\n看情况吧\n尽力了（无细节）\n运气不好\n目标定太高",
+      "risk_prompts_source_cell": "J6",
+      "situational_observations": "先做归因分析还是先喊难\n能否提出低成本替代路径（渠道置换、社群裂变、异业合作）\n是否主动与领导校准目标而非默默躺平",
+      "situational_observations_source_cell": "L6"
+    },
+    {
+      "factor_id": "systems_thinking",
+      "dimension_id": "business_drive",
+      "name": "全局思维",
+      "dimension_name": "业务驱动",
+      "source_sheet": "八因子提问清单",
+      "source_row": 7,
+      "source_cells": {
+        "A7": "业务驱动",
+        "B7": "全局思维",
+        "C7": "能否把手头任务放到更大的业务背景里看，理解上下游影响和不同目标之间的联系。",
+        "D7": "管理者三技能模型-概念技能（Katz, 1955）\n系统思维（Senge, 1990《第五项修炼》）\n认知复杂性（Streufert & Swezey, 1986）",
+        "E7": "能否说清\"这件事为什么存在\"（业务目标、上下游、利益相关方）\n是否有\"局部最优≠全局最优\"的识别经历\n对部门目标冲突的理解力（应届生可放宽到社团/项目层面）",
+        "F7": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+        "G7": "能把任务放进业务链条讲（上游输入、下游去向、整体目标）\n有放弃局部利益换取整体结果的事例\n主动了解上下游工作方式",
+        "H7": "只能描述执行动作，说不清为什么做\n\"我只负责我这块\"式边界感\n从未意识到产出有下游使用者",
+        "I7": "上游/下游\n对整体的影响\n从业务目标倒推\n利益相关方\n局部和全局\n牵一发动全身\n系统地看\n价值链\n短期指标与长期品牌\n站在公司角度",
+        "J7": "领导让做的\n我只负责我这块\n不清楚整体\n跟我没关系\n那是别的部门的事\n想那么多干嘛\n反正我做完就行",
+        "K7": "公司要求门店提升会员注册数。你发现店员为冲指标向顾客隐瞒了会员自动续费条款，注册数大涨但投诉量同步上升。如果你是区域管培生，你会怎么看待和处理？",
+        "L7": "能否看到\"指标—体验—品牌—长期收入\"链条\n是否只停留在\"店员做错了\"\n能否提出指标设计与执行机制两端的改进建议"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "能否把手头任务放到更大的业务背景里看，理解上下游影响和不同目标之间的联系。",
+      "definition_source_cell": "C7",
+      "theoretical_sources": "管理者三技能模型-概念技能（Katz, 1955）\n系统思维（Senge, 1990《第五项修炼》）\n认知复杂性（Streufert & Swezey, 1986）",
+      "theoretical_sources_source_cell": "D7",
+      "assessment_content": "能否说清\"这件事为什么存在\"（业务目标、上下游、利益相关方）\n是否有\"局部最优≠全局最优\"的识别经历\n对部门目标冲突的理解力（应届生可放宽到社团/项目层面）",
+      "assessment_content_source_cell": "E7",
+      "positive_characteristics": "能把任务放进业务链条讲（上游输入、下游去向、整体目标）\n有放弃局部利益换取整体结果的事例\n主动了解上下游工作方式",
+      "positive_characteristics_source_cell": "G7",
+      "risk_signals": "只能描述执行动作，说不清为什么做\n\"我只负责我这块\"式边界感\n从未意识到产出有下游使用者",
+      "risk_signals_source_cell": "H7",
+      "positive_prompts": "上游/下游\n对整体的影响\n从业务目标倒推\n利益相关方\n局部和全局\n牵一发动全身\n系统地看\n价值链\n短期指标与长期品牌\n站在公司角度",
+      "positive_prompts_source_cell": "I7",
+      "risk_prompts": "领导让做的\n我只负责我这块\n不清楚整体\n跟我没关系\n那是别的部门的事\n想那么多干嘛\n反正我做完就行",
+      "risk_prompts_source_cell": "J7",
+      "situational_observations": "能否看到\"指标—体验—品牌—长期收入\"链条\n是否只停留在\"店员做错了\"\n能否提出指标设计与执行机制两端的改进建议",
+      "situational_observations_source_cell": "L7"
+    },
+    {
+      "factor_id": "adaptability",
+      "dimension_id": "business_drive",
+      "name": "适应力",
+      "dimension_name": "业务驱动",
+      "source_sheet": "八因子提问清单",
+      "source_row": 8,
+      "source_cells": {
+        "A8": "业务驱动",
+        "B8": "适应力",
+        "C8": "情况变化、信息不全或要求冲突时，能否调整做法继续推进。",
+        "D8": "适应性绩效模型八维度（Pulakos et al., 2000）\n学习敏锐度之变革敏锐度（Lombardo & Eichinger, 2000）\n个人适应力I-ADAPT理论（Ployhart & Bliese, 2006）",
+        "E8": "计划被打乱后的第一反应（情绪停摆还是快速重排）\n信息不全时是否敢先动起来边做边校准\n面对冲突要求（两个领导、两条标准）如何处理",
+        "F8": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+        "G8": "情绪稳定，调整快且有条理（先保核心目标再重排资源）\n信息不全时用\"最小可行行动+快速验证\"\n对变化持中性甚至积极态度",
+        "H8": "大篇幅抱怨变化不合理而行动单薄\n停摆等待\"等领导明确了再说\"\n对模糊要求不做澄清埋头按自己理解做",
+        "I8": "先保核心目标\nB计划\n边做边调\n快速验证\n重排优先级\n先跑起来再说\n及时止损\n小步快跑\n先澄清假设\n接受不完美",
+        "J8": "太离谱了\n等政策明确再说\n我就先放着\n为什么又改\n早干嘛去了\n等通知\n我按原计划做\n改来改去没法干",
+        "K8": "汇报前一天，领导临时通知方案方向要从A改为B，但他只有一个模糊的想法，说不清具体要求，明天就要用。你今晚怎么安排？",
+        "L8": "是否先花少量时间向领导澄清关键假设\n能否在A方案素材基础上快速重组\n有无\"先做60分版本+准备现场调整\"的务实策略"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "情况变化、信息不全或要求冲突时，能否调整做法继续推进。",
+      "definition_source_cell": "C8",
+      "theoretical_sources": "适应性绩效模型八维度（Pulakos et al., 2000）\n学习敏锐度之变革敏锐度（Lombardo & Eichinger, 2000）\n个人适应力I-ADAPT理论（Ployhart & Bliese, 2006）",
+      "theoretical_sources_source_cell": "D8",
+      "assessment_content": "计划被打乱后的第一反应（情绪停摆还是快速重排）\n信息不全时是否敢先动起来边做边校准\n面对冲突要求（两个领导、两条标准）如何处理",
+      "assessment_content_source_cell": "E8",
+      "positive_characteristics": "情绪稳定，调整快且有条理（先保核心目标再重排资源）\n信息不全时用\"最小可行行动+快速验证\"\n对变化持中性甚至积极态度",
+      "positive_characteristics_source_cell": "G8",
+      "risk_signals": "大篇幅抱怨变化不合理而行动单薄\n停摆等待\"等领导明确了再说\"\n对模糊要求不做澄清埋头按自己理解做",
+      "risk_signals_source_cell": "H8",
+      "positive_prompts": "先保核心目标\nB计划\n边做边调\n快速验证\n重排优先级\n先跑起来再说\n及时止损\n小步快跑\n先澄清假设\n接受不完美",
+      "positive_prompts_source_cell": "I8",
+      "risk_prompts": "太离谱了\n等政策明确再说\n我就先放着\n为什么又改\n早干嘛去了\n等通知\n我按原计划做\n改来改去没法干",
+      "risk_prompts_source_cell": "J8",
+      "situational_observations": "是否先花少量时间向领导澄清关键假设\n能否在A方案素材基础上快速重组\n有无\"先做60分版本+准备现场调整\"的务实策略",
+      "situational_observations_source_cell": "L8"
+    },
+    {
+      "factor_id": "feedback",
+      "dimension_id": "growth",
+      "name": "接纳反馈",
+      "dimension_name": "成长性",
+      "source_sheet": "八因子提问清单",
+      "source_row": 9,
+      "source_cells": {
+        "A9": "成长性",
+        "B9": "接纳反馈",
+        "C9": "能否听取反馈、反思自己的影响，并把反馈转成行为上的调整。它不等于一味顺从批评。",
+        "D9": "反馈寻求行为FSB（Ashford & Cummings, 1983）\n反馈导向量表（Linderbaum & Levy, 2010）\n成长型思维与学习目标导向（Dweck, 2006；VandeWalle, 1997）",
+        "E9": "是否有\"反馈→反思→行为改变→验证\"完整闭环\n面对尖锐批评是防御、表面顺从还是追问细节\n是否主动寻求反馈\n能否区分\"接纳反馈\"与\"放弃判断\"",
+        "F9": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+        "G9": "能讲出完整闭环（听到→追问具体场景→调整行为→验证效果）\n对不认同的反馈能说明甄别过程\n有主动寻求反馈的习惯性动作",
+        "H9": "只有态度没有实例\n防御性归因（\"他不懂实际情况\"）\n阳奉阴违\n毫无判断的全盘顺从",
+        "I9": "我追问了具体哪里\n后来我改成\n三个月后他说好转了\n定期请人挑刺\n复盘会\n主动问意见\n记下来逐条改\n验证效果\n先感谢再澄清\n反馈清单",
+        "J9": "他不懂实际情况\n表面答应\n懒得争\n其实我没改\n那是偏见\n他说他的我做我的\n我都接受（无实例）\n没必要当真",
+        "K9": "转正答辩现场，一位评委当众评价你的方案\"逻辑混乱、不像管培生的水平\"。你当场会如何回应？答辩结束后你会做什么？",
+        "L9": "当场是否克制且聚焦问题本身（询问具体哪里混乱）\n会后是否主动找评委复盘形成改进清单\n还是当场辩解、会后吐槽"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "能否听取反馈、反思自己的影响，并把反馈转成行为上的调整。它不等于一味顺从批评。",
+      "definition_source_cell": "C9",
+      "theoretical_sources": "反馈寻求行为FSB（Ashford & Cummings, 1983）\n反馈导向量表（Linderbaum & Levy, 2010）\n成长型思维与学习目标导向（Dweck, 2006；VandeWalle, 1997）",
+      "theoretical_sources_source_cell": "D9",
+      "assessment_content": "是否有\"反馈→反思→行为改变→验证\"完整闭环\n面对尖锐批评是防御、表面顺从还是追问细节\n是否主动寻求反馈\n能否区分\"接纳反馈\"与\"放弃判断\"",
+      "assessment_content_source_cell": "E9",
+      "positive_characteristics": "能讲出完整闭环（听到→追问具体场景→调整行为→验证效果）\n对不认同的反馈能说明甄别过程\n有主动寻求反馈的习惯性动作",
+      "positive_characteristics_source_cell": "G9",
+      "risk_signals": "只有态度没有实例\n防御性归因（\"他不懂实际情况\"）\n阳奉阴违\n毫无判断的全盘顺从",
+      "risk_signals_source_cell": "H9",
+      "positive_prompts": "我追问了具体哪里\n后来我改成\n三个月后他说好转了\n定期请人挑刺\n复盘会\n主动问意见\n记下来逐条改\n验证效果\n先感谢再澄清\n反馈清单",
+      "positive_prompts_source_cell": "I9",
+      "risk_prompts": "他不懂实际情况\n表面答应\n懒得争\n其实我没改\n那是偏见\n他说他的我做我的\n我都接受（无实例）\n没必要当真",
+      "risk_prompts_source_cell": "J9",
+      "situational_observations": "当场是否克制且聚焦问题本身（询问具体哪里混乱）\n会后是否主动找评委复盘形成改进清单\n还是当场辩解、会后吐槽",
+      "situational_observations_source_cell": "L9"
+    },
+    {
+      "factor_id": "learning",
+      "dimension_id": "growth",
+      "name": "学习敏锐度",
+      "dimension_name": "成长性",
+      "source_sheet": "八因子提问清单",
+      "source_row": 10,
+      "source_cells": {
+        "A10": "成长性",
+        "B10": "学习敏锐度",
+        "C10": "能否从新任务、经验甚至失败中快速学到东西，并把学到的方法用到新情境里。它也不只是\"爱上课\"。",
+        "D10": "学习敏锐度（Lombardo & Eichinger, 2000）\n构念理论化（De Meuse et al., 2010；DeRue et al., 2012）\n经验学习圈（Kolb, 1984）\n高潜识别维度框架（Silzer & Church, 2009）",
+        "E10": "面对陌生领域是否有方法论（拆解、找对人请教、最小实践、快速迭代）\n能否把A情境经验迁移到B情境（与\"爱学习\"的关键区别）\n从失败中提取规律的能力",
+        "F10": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+        "G10": "学习路径清晰（拆解→找标杆/请教→最小闭环实践→复盘迭代）且有时间感\n能明确说出从A到B的迁移及效果\n失败复盘产出可复用规律而非空话",
+        "H10": "把学习等同于上课/考证/刷课而无实践转化\n学了很多但无一例迁移\n失败归因全部外部、提炼不出规律",
+        "I10": "先跑通最小闭环\n拆解\n请教了三个人\n复盘出三条规律\n后来用在\n迁移到\n找标杆\n边干边学\n两周上手\n提炼方法\n快速迭代",
+        "J10": "我报了个班\n还没机会用\n主要是运气不好\n看了很多教程\n学完就忘了\n没时间实践\n理论都懂\n一学就会一做就废",
+        "K10": "给你48小时，向管理层做一次关于\"公司是否进入一个你从未接触过的行业（如宠物医疗）\"的简报。你会怎么安排这48小时的学习和内容组织？",
+        "L10": "有无信息源策略（报告/从业者/竞品）\n是否先搭判断框架再填信息\n如何对待信息缺口（标注假设而非硬编）\n时间分配是否体现\"最小可行认知\"思路"
+      },
+      "interpretation_scope": "原表因子级参考文字；不是逐题标准答案或经本系统验证的心理属性测量。",
+      "definition": "能否从新任务、经验甚至失败中快速学到东西，并把学到的方法用到新情境里。它也不只是\"爱上课\"。",
+      "definition_source_cell": "C10",
+      "theoretical_sources": "学习敏锐度（Lombardo & Eichinger, 2000）\n构念理论化（De Meuse et al., 2010；DeRue et al., 2012）\n经验学习圈（Kolb, 1984）\n高潜识别维度框架（Silzer & Church, 2009）",
+      "theoretical_sources_source_cell": "D10",
+      "assessment_content": "面对陌生领域是否有方法论（拆解、找对人请教、最小实践、快速迭代）\n能否把A情境经验迁移到B情境（与\"爱学习\"的关键区别）\n从失败中提取规律的能力",
+      "assessment_content_source_cell": "E10",
+      "positive_characteristics": "学习路径清晰（拆解→找标杆/请教→最小闭环实践→复盘迭代）且有时间感\n能明确说出从A到B的迁移及效果\n失败复盘产出可复用规律而非空话",
+      "positive_characteristics_source_cell": "G10",
+      "risk_signals": "把学习等同于上课/考证/刷课而无实践转化\n学了很多但无一例迁移\n失败归因全部外部、提炼不出规律",
+      "risk_signals_source_cell": "H10",
+      "positive_prompts": "先跑通最小闭环\n拆解\n请教了三个人\n复盘出三条规律\n后来用在\n迁移到\n找标杆\n边干边学\n两周上手\n提炼方法\n快速迭代",
+      "positive_prompts_source_cell": "I10",
+      "risk_prompts": "我报了个班\n还没机会用\n主要是运气不好\n看了很多教程\n学完就忘了\n没时间实践\n理论都懂\n一学就会一做就废",
+      "risk_prompts_source_cell": "J10",
+      "situational_observations": "有无信息源策略（报告/从业者/竞品）\n是否先搭判断框架再填信息\n如何对待信息缺口（标注假设而非硬编）\n时间分配是否体现\"最小可行认知\"思路",
+      "situational_observations_source_cell": "L10"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "leadership_F3_Q1",
+      "factor_id": "leadership",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_question_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）",
+      "original_followup_text": "具体做了哪些协调动作？最难处理的人或事？结果如何？",
+      "branch_ids": [
+        "leadership_F3_Q1_action",
+        "leadership_F3_Q1_difficulty",
+        "leadership_F3_Q1_result"
+      ],
+      "expected_evidence": [
+        "是否主动承担过牵头、协调、兜底的角色",
+        "动机是\"对团队结果负责\"还是\"想要头衔\"",
+        "对领导角色的代价（协调冲突、替团队扛责）是否有真实认知"
+      ],
+      "expected_evidence_source": {
+        "cell": "E3",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": "mt_rubric_v1_proposed:leadership_F3_Q1",
+      "question_version": "1.0.0",
+      "activation_status": "proposed_dev",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "leadership_F3_Q2",
+      "factor_id": "leadership",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "讲一次团队陷入僵局、没人愿意牵头时你采取的行动。",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_question_text": "Q2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "original_followup_text": "没人响应你怎么办？事后如何评价自己的做法？",
+      "branch_ids": [
+        "leadership_F3_Q2_followup_01",
+        "leadership_F3_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "是否主动承担过牵头、协调、兜底的角色",
+        "动机是\"对团队结果负责\"还是\"想要头衔\"",
+        "对领导角色的代价（协调冲突、替团队扛责）是否有真实认知"
+      ],
+      "expected_evidence_source": {
+        "cell": "E3",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "leadership_K3",
+      "factor_id": "leadership",
+      "dimension_id": "leadership_orientation",
+      "question_type": "situational",
+      "stem": "假设你带领5人小组做市场调研，截止前3天发现两名成员进度严重落后且互相推诿，组里气氛开始对立。你接下来72小时会做什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K3",
+      "source_question_index": null,
+      "source_raw_text": "假设你带领5人小组做市场调研，截止前3天发现两名成员进度严重落后且互相推诿，组里气氛开始对立。你接下来72小时会做什么？",
+      "source_question_text": "假设你带领5人小组做市场调研，截止前3天发现两名成员进度严重落后且互相推诿，组里气氛开始对立。你接下来72小时会做什么？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "是否先对齐目标与事实（而非先追责）",
+        "有无具体分工与跟进机制",
+        "是否愿意自己兜底",
+        "如何处理对立情绪"
+      ],
+      "expected_evidence_source": {
+        "cell": "L3",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "develop_others_F4_Q1",
+      "factor_id": "develop_others",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_question_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）",
+      "original_followup_text": "对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？",
+      "branch_ids": [
+        "develop_others_F4_Q1_followup_01",
+        "develop_others_F4_Q1_followup_02",
+        "develop_others_F4_Q1_followup_03"
+      ],
+      "expected_evidence": [
+        "是否有\"让别人变得更好\"的真实行为记录",
+        "帮助时是\"授人以渔\"还是\"替他做完\"",
+        "面对竞争关系是否仍愿意成就对方"
+      ],
+      "expected_evidence_source": {
+        "cell": "E4",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "develop_others_F4_Q2",
+      "factor_id": "develop_others",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_question_text": "Q2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "original_followup_text": "如果对方因此超过你，你能接受吗？真实发生过吗？",
+      "branch_ids": [
+        "develop_others_F4_Q2_followup_01",
+        "develop_others_F4_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "是否有\"让别人变得更好\"的真实行为记录",
+        "帮助时是\"授人以渔\"还是\"替他做完\"",
+        "面对竞争关系是否仍愿意成就对方"
+      ],
+      "expected_evidence_source": {
+        "cell": "E4",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "develop_others_K4",
+      "factor_id": "develop_others",
+      "dimension_id": "leadership_orientation",
+      "question_type": "situational",
+      "stem": "你组里有一位能力很强的成员，但习惯单打独斗、从不带新人，导致新人成长慢、团队过度依赖他。作为组长，你会怎么处理？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K4",
+      "source_question_index": null,
+      "source_raw_text": "你组里有一位能力很强的成员，但习惯单打独斗、从不带新人，导致新人成长慢、团队过度依赖他。作为组长，你会怎么处理？",
+      "source_question_text": "你组里有一位能力很强的成员，但习惯单打独斗、从不带新人，导致新人成长慢、团队过度依赖他。作为组长，你会怎么处理？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "能否既保护高绩效者积极性，又设计机制让其经验沉淀给他人（结对、分享会、带教目标）",
+        "避免\"批评强者\"或\"放任不管\"两个极端"
+      ],
+      "expected_evidence_source": {
+        "cell": "L4",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "balance_people_task_F5_Q1",
+      "factor_id": "balance_people_task",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_question_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）",
+      "original_followup_text": "单独和谁沟通过？说了什么？进度和关系最终状态？",
+      "branch_ids": [
+        "balance_people_task_F5_Q1_followup_01",
+        "balance_people_task_F5_Q1_followup_02",
+        "balance_people_task_F5_Q1_followup_03"
+      ],
+      "expected_evidence": [
+        "面对\"事\"与\"人\"的张力时两头兼顾还是牺牲一端",
+        "是否有坚持正确做法同时维护关系的具体沟通策略",
+        "对冲突是回避、硬刚还是有策略地面对"
+      ],
+      "expected_evidence_source": {
+        "cell": "E5",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "balance_people_task_F5_Q2",
+      "factor_id": "balance_people_task",
+      "dimension_id": "leadership_orientation",
+      "question_type": "behavioral",
+      "stem": "有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_question_text": "Q2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "original_followup_text": "重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？",
+      "branch_ids": [
+        "balance_people_task_F5_Q2_followup_01"
+      ],
+      "expected_evidence": [
+        "面对\"事\"与\"人\"的张力时两头兼顾还是牺牲一端",
+        "是否有坚持正确做法同时维护关系的具体沟通策略",
+        "对冲突是回避、硬刚还是有策略地面对"
+      ],
+      "expected_evidence_source": {
+        "cell": "E5",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "balance_people_task_K5",
+      "factor_id": "balance_people_task",
+      "dimension_id": "leadership_orientation",
+      "question_type": "situational",
+      "stem": "和你关系最好的一位同事负责的部分质量不达标，返工会直接影响他本月绩效评价；不返工则拖累整个项目交付。你会怎么做？会不会告诉他？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K5",
+      "source_question_index": null,
+      "source_raw_text": "和你关系最好的一位同事负责的部分质量不达标，返工会直接影响他本月绩效评价；不返工则拖累整个项目交付。你会怎么做？会不会告诉他？",
+      "source_question_text": "和你关系最好的一位同事负责的部分质量不达标，返工会直接影响他本月绩效评价；不返工则拖累整个项目交付。你会怎么做？会不会告诉他？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "是否直面问题（不当老好人）",
+        "沟通方式（私下/公开、对事/对人）",
+        "是否提供补救支持而非单纯告状或包庇"
+      ],
+      "expected_evidence_source": {
+        "cell": "L5",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "results_F6_Q1",
+      "factor_id": "results",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_question_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）",
+      "original_followup_text": "试过几种办法？哪种无效、为什么？达成度多少？",
+      "branch_ids": [
+        "results_F6_Q1_followup_01",
+        "results_F6_Q1_followup_02",
+        "results_F6_Q1_followup_03"
+      ],
+      "expected_evidence": [
+        "目标是否清晰可量化",
+        "遇到障碍时多路径尝试还是调整目标/放弃/归因外部",
+        "对未达成的结果是否诚实、有无补救复盘"
+      ],
+      "expected_evidence_source": {
+        "cell": "E6",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "results_F6_Q2",
+      "factor_id": "results",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "讲一次你没有达成目标的经历。差在哪里？后来做了什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_question_text": "Q2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "original_followup_text": "目标是自己定的还是被安排的？失败后下一个目标是什么？",
+      "branch_ids": [
+        "results_F6_Q2_followup_01",
+        "results_F6_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "目标是否清晰可量化",
+        "遇到障碍时多路径尝试还是调整目标/放弃/归因外部",
+        "对未达成的结果是否诚实、有无补救复盘"
+      ],
+      "expected_evidence_source": {
+        "cell": "E6",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "results_K6",
+      "factor_id": "results",
+      "dimension_id": "business_drive",
+      "question_type": "situational",
+      "stem": "实习期间领导给你定了\"一个月拉新1万人\"的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K6",
+      "source_question_index": null,
+      "source_raw_text": "实习期间领导给你定了\"一个月拉新1万人\"的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？",
+      "source_question_text": "实习期间领导给你定了\"一个月拉新1万人\"的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "先做归因分析还是先喊难",
+        "能否提出低成本替代路径（渠道置换、社群裂变、异业合作）",
+        "是否主动与领导校准目标而非默默躺平"
+      ],
+      "expected_evidence_source": {
+        "cell": "L6",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": "mt_rubric_v1_proposed:results_K6",
+      "question_version": "1.0.0",
+      "activation_status": "proposed_dev",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "systems_thinking_F7_Q1",
+      "factor_id": "systems_thinking",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_question_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）",
+      "original_followup_text": "怎么发现冲突的？调整让你付出什么代价？",
+      "branch_ids": [
+        "systems_thinking_F7_Q1_followup_01",
+        "systems_thinking_F7_Q1_followup_02"
+      ],
+      "expected_evidence": [
+        "能否说清\"这件事为什么存在\"（业务目标、上下游、利益相关方）",
+        "是否有\"局部最优≠全局最优\"的识别经历",
+        "对部门目标冲突的理解力（应届生可放宽到社团/项目层面）"
+      ],
+      "expected_evidence_source": {
+        "cell": "E7",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "systems_thinking_F7_Q2",
+      "factor_id": "systems_thinking",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_question_text": "Q2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "original_followup_text": "做之前就知道还是事后才明白？改变了做事方式吗？",
+      "branch_ids": [
+        "systems_thinking_F7_Q2_followup_01",
+        "systems_thinking_F7_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "能否说清\"这件事为什么存在\"（业务目标、上下游、利益相关方）",
+        "是否有\"局部最优≠全局最优\"的识别经历",
+        "对部门目标冲突的理解力（应届生可放宽到社团/项目层面）"
+      ],
+      "expected_evidence_source": {
+        "cell": "E7",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "systems_thinking_K7",
+      "factor_id": "systems_thinking",
+      "dimension_id": "business_drive",
+      "question_type": "situational",
+      "stem": "公司要求门店提升会员注册数。你发现店员为冲指标向顾客隐瞒了会员自动续费条款，注册数大涨但投诉量同步上升。如果你是区域管培生，你会怎么看待和处理？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K7",
+      "source_question_index": null,
+      "source_raw_text": "公司要求门店提升会员注册数。你发现店员为冲指标向顾客隐瞒了会员自动续费条款，注册数大涨但投诉量同步上升。如果你是区域管培生，你会怎么看待和处理？",
+      "source_question_text": "公司要求门店提升会员注册数。你发现店员为冲指标向顾客隐瞒了会员自动续费条款，注册数大涨但投诉量同步上升。如果你是区域管培生，你会怎么看待和处理？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "能否看到\"指标—体验—品牌—长期收入\"链条",
+        "是否只停留在\"店员做错了\"",
+        "能否提出指标设计与执行机制两端的改进建议"
+      ],
+      "expected_evidence_source": {
+        "cell": "L7",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "adaptability_F8_Q1",
+      "factor_id": "adaptability",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_question_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）",
+      "original_followup_text": "最先做的三件事？放弃了什么、保住了什么？",
+      "branch_ids": [
+        "adaptability_F8_Q1_followup_01",
+        "adaptability_F8_Q1_followup_02"
+      ],
+      "expected_evidence": [
+        "计划被打乱后的第一反应（情绪停摆还是快速重排）",
+        "信息不全时是否敢先动起来边做边校准",
+        "面对冲突要求（两个领导、两条标准）如何处理"
+      ],
+      "expected_evidence_source": {
+        "cell": "E8",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "adaptability_F8_Q2",
+      "factor_id": "adaptability",
+      "dimension_id": "business_drive",
+      "question_type": "behavioral",
+      "stem": "讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_question_text": "Q2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "original_followup_text": "事后证明对吗？错了多快发现、怎么纠偏？",
+      "branch_ids": [
+        "adaptability_F8_Q2_followup_01",
+        "adaptability_F8_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "计划被打乱后的第一反应（情绪停摆还是快速重排）",
+        "信息不全时是否敢先动起来边做边校准",
+        "面对冲突要求（两个领导、两条标准）如何处理"
+      ],
+      "expected_evidence_source": {
+        "cell": "E8",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "adaptability_K8",
+      "factor_id": "adaptability",
+      "dimension_id": "business_drive",
+      "question_type": "situational",
+      "stem": "汇报前一天，领导临时通知方案方向要从A改为B，但他只有一个模糊的想法，说不清具体要求，明天就要用。你今晚怎么安排？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K8",
+      "source_question_index": null,
+      "source_raw_text": "汇报前一天，领导临时通知方案方向要从A改为B，但他只有一个模糊的想法，说不清具体要求，明天就要用。你今晚怎么安排？",
+      "source_question_text": "汇报前一天，领导临时通知方案方向要从A改为B，但他只有一个模糊的想法，说不清具体要求，明天就要用。你今晚怎么安排？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "是否先花少量时间向领导澄清关键假设",
+        "能否在A方案素材基础上快速重组",
+        "有无\"先做60分版本+准备现场调整\"的务实策略"
+      ],
+      "expected_evidence_source": {
+        "cell": "L8",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "feedback_F9_Q1",
+      "factor_id": "feedback",
+      "dimension_id": "growth",
+      "question_type": "behavioral",
+      "stem": "讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_question_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）",
+      "original_followup_text": "有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？",
+      "branch_ids": [
+        "feedback_F9_Q1_followup_01",
+        "feedback_F9_Q1_followup_02",
+        "feedback_F9_Q1_followup_03"
+      ],
+      "expected_evidence": [
+        "是否有\"反馈→反思→行为改变→验证\"完整闭环",
+        "面对尖锐批评是防御、表面顺从还是追问细节",
+        "是否主动寻求反馈",
+        "能否区分\"接纳反馈\"与\"放弃判断\""
+      ],
+      "expected_evidence_source": {
+        "cell": "E9",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "feedback_F9_Q2",
+      "factor_id": "feedback",
+      "dimension_id": "growth",
+      "question_type": "behavioral",
+      "stem": "最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_question_text": "Q2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "original_followup_text": "收到过不认同的反馈吗？照单全收还是怎么处理？",
+      "branch_ids": [
+        "feedback_F9_Q2_followup_01",
+        "feedback_F9_Q2_followup_02"
+      ],
+      "expected_evidence": [
+        "是否有\"反馈→反思→行为改变→验证\"完整闭环",
+        "面对尖锐批评是防御、表面顺从还是追问细节",
+        "是否主动寻求反馈",
+        "能否区分\"接纳反馈\"与\"放弃判断\""
+      ],
+      "expected_evidence_source": {
+        "cell": "E9",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "feedback_K9",
+      "factor_id": "feedback",
+      "dimension_id": "growth",
+      "question_type": "situational",
+      "stem": "转正答辩现场，一位评委当众评价你的方案\"逻辑混乱、不像管培生的水平\"。你当场会如何回应？答辩结束后你会做什么？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K9",
+      "source_question_index": null,
+      "source_raw_text": "转正答辩现场，一位评委当众评价你的方案\"逻辑混乱、不像管培生的水平\"。你当场会如何回应？答辩结束后你会做什么？",
+      "source_question_text": "转正答辩现场，一位评委当众评价你的方案\"逻辑混乱、不像管培生的水平\"。你当场会如何回应？答辩结束后你会做什么？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "当场是否克制且聚焦问题本身（询问具体哪里混乱）",
+        "会后是否主动找评委复盘形成改进清单",
+        "还是当场辩解、会后吐槽"
+      ],
+      "expected_evidence_source": {
+        "cell": "L9",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "learning_F10_Q1",
+      "factor_id": "learning",
+      "dimension_id": "growth",
+      "question_type": "behavioral",
+      "stem": "讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 1,
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_question_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）",
+      "original_followup_text": "第一个请教的人是谁？第一步做的小试验？踩过什么坑？",
+      "branch_ids": [
+        "learning_F10_Q1_followup_01",
+        "learning_F10_Q1_followup_02",
+        "learning_F10_Q1_followup_03"
+      ],
+      "expected_evidence": [
+        "面对陌生领域是否有方法论（拆解、找对人请教、最小实践、快速迭代）",
+        "能否把A情境经验迁移到B情境（与\"爱学习\"的关键区别）",
+        "从失败中提取规律的能力"
+      ],
+      "expected_evidence_source": {
+        "cell": "E10",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "learning_F10_Q2",
+      "factor_id": "learning",
+      "dimension_id": "growth",
+      "question_type": "behavioral",
+      "stem": "讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 2,
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_question_text": "Q2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "original_followup_text": "如果规律在第二件事上不灵，你会怎么修正？",
+      "branch_ids": [
+        "learning_F10_Q2_boundary"
+      ],
+      "expected_evidence": [
+        "面对陌生领域是否有方法论（拆解、找对人请教、最小实践、快速迭代）",
+        "能否把A情境经验迁移到B情境（与\"爱学习\"的关键区别）",
+        "从失败中提取规律的能力"
+      ],
+      "expected_evidence_source": {
+        "cell": "E10",
+        "level": "factor_reference_only"
+      },
+      "rubric_id": "mt_rubric_v1_proposed:learning_F10_Q2",
+      "question_version": "1.0.0",
+      "activation_status": "proposed_dev",
+      "business_approval_status": "not_reviewed"
+    },
+    {
+      "question_id": "learning_K10",
+      "factor_id": "learning",
+      "dimension_id": "growth",
+      "question_type": "situational",
+      "stem": "给你48小时，向管理层做一次关于\"公司是否进入一个你从未接触过的行业（如宠物医疗）\"的简报。你会怎么安排这48小时的学习和内容组织？",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "K10",
+      "source_question_index": null,
+      "source_raw_text": "给你48小时，向管理层做一次关于\"公司是否进入一个你从未接触过的行业（如宠物医疗）\"的简报。你会怎么安排这48小时的学习和内容组织？",
+      "source_question_text": "给你48小时，向管理层做一次关于\"公司是否进入一个你从未接触过的行业（如宠物医疗）\"的简报。你会怎么安排这48小时的学习和内容组织？",
+      "original_followup_text": null,
+      "branch_ids": [],
+      "expected_evidence": [
+        "有无信息源策略（报告/从业者/竞品）",
+        "是否先搭判断框架再填信息",
+        "如何对待信息缺口（标注假设而非硬编）",
+        "时间分配是否体现\"最小可行认知\"思路"
+      ],
+      "expected_evidence_source": {
+        "cell": "L10",
+        "level": "situational_observation_reference"
+      },
+      "rubric_id": null,
+      "question_version": "1.0.0",
+      "activation_status": "banked_not_active",
+      "business_approval_status": "not_reviewed"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "leadership_F3_Q1_action",
+      "parent_question_id": "leadership_F3_Q1",
+      "branch_type": "evidence_completion",
+      "template": "具体做了哪些协调动作？",
+      "target_evidence": [
+        "action"
+      ],
+      "trigger_rule_id": "mt_followup_v1_proposed:action",
+      "trigger_description": "缺少本人具体协调行动",
+      "stop_rule_id": "mt_followup_v1_proposed:one_followup_per_interview",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "具体做了哪些协调动作？",
+      "source_followup_text": "具体做了哪些协调动作？最难处理的人或事？结果如何？",
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_included_followup": true,
+      "review_status": "proposed_dev",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [
+        "mt_short_v1_proposed"
+      ],
+      "branch_version": "1.0.0",
+      "metadata_source": "handoff_section_3_4"
+    },
+    {
+      "branch_id": "leadership_F3_Q1_difficulty",
+      "parent_question_id": "leadership_F3_Q1",
+      "branch_type": "evidence_completion",
+      "template": "最难处理的人或事？",
+      "target_evidence": [
+        "difficulty"
+      ],
+      "trigger_rule_id": "mt_followup_v1_proposed:difficulty",
+      "trigger_description": "需补充主要困难及处理背景",
+      "stop_rule_id": "mt_followup_v1_proposed:one_followup_per_interview",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "最难处理的人或事？",
+      "source_followup_text": "具体做了哪些协调动作？最难处理的人或事？结果如何？",
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_included_followup": true,
+      "review_status": "proposed_dev",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [
+        "mt_short_v1_proposed"
+      ],
+      "branch_version": "1.0.0",
+      "metadata_source": "handoff_section_3_4"
+    },
+    {
+      "branch_id": "leadership_F3_Q1_result",
+      "parent_question_id": "leadership_F3_Q1",
+      "branch_type": "evidence_completion",
+      "template": "结果如何？",
+      "target_evidence": [
+        "result"
+      ],
+      "trigger_rule_id": "mt_followup_v1_proposed:result",
+      "trigger_description": "已有行动但结果证据不足",
+      "stop_rule_id": "mt_followup_v1_proposed:one_followup_per_interview",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "结果如何？",
+      "source_followup_text": "具体做了哪些协调动作？最难处理的人或事？结果如何？",
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_included_followup": true,
+      "review_status": "proposed_dev",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [
+        "mt_short_v1_proposed"
+      ],
+      "branch_version": "1.0.0",
+      "metadata_source": "handoff_section_3_4"
+    },
+    {
+      "branch_id": "leadership_F3_Q2_followup_01",
+      "parent_question_id": "leadership_F3_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "没人响应你怎么办？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "没人响应你怎么办？",
+      "source_followup_text": "没人响应你怎么办？事后如何评价自己的做法？",
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "leadership_F3_Q2_followup_02",
+      "parent_question_id": "leadership_F3_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "事后如何评价自己的做法？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F3",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "事后如何评价自己的做法？",
+      "source_followup_text": "没人响应你怎么办？事后如何评价自己的做法？",
+      "source_raw_text": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "develop_others_F4_Q1_followup_01",
+      "parent_question_id": "develop_others_F4_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "对方在哪一点上变强了？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "对方在哪一点上变强了？",
+      "source_followup_text": "对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？",
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "develop_others_F4_Q1_followup_02",
+      "parent_question_id": "develop_others_F4_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "你怎么知道的？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "你怎么知道的？",
+      "source_followup_text": "对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？",
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "develop_others_F4_Q1_followup_03",
+      "parent_question_id": "develop_others_F4_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "投入多少时间，值不值？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "投入多少时间，值不值？",
+      "source_followup_text": "对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？",
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "develop_others_F4_Q2_followup_01",
+      "parent_question_id": "develop_others_F4_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "如果对方因此超过你，你能接受吗？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "如果对方因此超过你，你能接受吗？",
+      "source_followup_text": "如果对方因此超过你，你能接受吗？真实发生过吗？",
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "develop_others_F4_Q2_followup_02",
+      "parent_question_id": "develop_others_F4_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "真实发生过吗？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F4",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "真实发生过吗？",
+      "source_followup_text": "如果对方因此超过你，你能接受吗？真实发生过吗？",
+      "source_raw_text": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "balance_people_task_F5_Q1_followup_01",
+      "parent_question_id": "balance_people_task_F5_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "单独和谁沟通过？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "单独和谁沟通过？",
+      "source_followup_text": "单独和谁沟通过？说了什么？进度和关系最终状态？",
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "balance_people_task_F5_Q1_followup_02",
+      "parent_question_id": "balance_people_task_F5_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "说了什么？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "说了什么？",
+      "source_followup_text": "单独和谁沟通过？说了什么？进度和关系最终状态？",
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "balance_people_task_F5_Q1_followup_03",
+      "parent_question_id": "balance_people_task_F5_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "进度和关系最终状态？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "进度和关系最终状态？",
+      "source_followup_text": "单独和谁沟通过？说了什么？进度和关系最终状态？",
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "balance_people_task_F5_Q2_followup_01",
+      "parent_question_id": "balance_people_task_F5_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F5",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？",
+      "source_followup_text": "重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？",
+      "source_raw_text": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "results_F6_Q1_followup_01",
+      "parent_question_id": "results_F6_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "试过几种办法？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "试过几种办法？",
+      "source_followup_text": "试过几种办法？哪种无效、为什么？达成度多少？",
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "results_F6_Q1_followup_02",
+      "parent_question_id": "results_F6_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "哪种无效、为什么？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "哪种无效、为什么？",
+      "source_followup_text": "试过几种办法？哪种无效、为什么？达成度多少？",
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "results_F6_Q1_followup_03",
+      "parent_question_id": "results_F6_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "达成度多少？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "达成度多少？",
+      "source_followup_text": "试过几种办法？哪种无效、为什么？达成度多少？",
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "results_F6_Q2_followup_01",
+      "parent_question_id": "results_F6_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "目标是自己定的还是被安排的？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "目标是自己定的还是被安排的？",
+      "source_followup_text": "目标是自己定的还是被安排的？失败后下一个目标是什么？",
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "results_F6_Q2_followup_02",
+      "parent_question_id": "results_F6_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "失败后下一个目标是什么？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F6",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "失败后下一个目标是什么？",
+      "source_followup_text": "目标是自己定的还是被安排的？失败后下一个目标是什么？",
+      "source_raw_text": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "systems_thinking_F7_Q1_followup_01",
+      "parent_question_id": "systems_thinking_F7_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "怎么发现冲突的？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "怎么发现冲突的？",
+      "source_followup_text": "怎么发现冲突的？调整让你付出什么代价？",
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "systems_thinking_F7_Q1_followup_02",
+      "parent_question_id": "systems_thinking_F7_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "调整让你付出什么代价？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "调整让你付出什么代价？",
+      "source_followup_text": "怎么发现冲突的？调整让你付出什么代价？",
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "systems_thinking_F7_Q2_followup_01",
+      "parent_question_id": "systems_thinking_F7_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "做之前就知道还是事后才明白？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "做之前就知道还是事后才明白？",
+      "source_followup_text": "做之前就知道还是事后才明白？改变了做事方式吗？",
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "systems_thinking_F7_Q2_followup_02",
+      "parent_question_id": "systems_thinking_F7_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "改变了做事方式吗？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F7",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "改变了做事方式吗？",
+      "source_followup_text": "做之前就知道还是事后才明白？改变了做事方式吗？",
+      "source_raw_text": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "adaptability_F8_Q1_followup_01",
+      "parent_question_id": "adaptability_F8_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "最先做的三件事？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "最先做的三件事？",
+      "source_followup_text": "最先做的三件事？放弃了什么、保住了什么？",
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "adaptability_F8_Q1_followup_02",
+      "parent_question_id": "adaptability_F8_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "放弃了什么、保住了什么？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "放弃了什么、保住了什么？",
+      "source_followup_text": "最先做的三件事？放弃了什么、保住了什么？",
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "adaptability_F8_Q2_followup_01",
+      "parent_question_id": "adaptability_F8_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "事后证明对吗？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "事后证明对吗？",
+      "source_followup_text": "事后证明对吗？错了多快发现、怎么纠偏？",
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "adaptability_F8_Q2_followup_02",
+      "parent_question_id": "adaptability_F8_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "错了多快发现、怎么纠偏？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F8",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "错了多快发现、怎么纠偏？",
+      "source_followup_text": "事后证明对吗？错了多快发现、怎么纠偏？",
+      "source_raw_text": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "feedback_F9_Q1_followup_01",
+      "parent_question_id": "feedback_F9_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "有没有追问具体细节？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "有没有追问具体细节？",
+      "source_followup_text": "有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？",
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "feedback_F9_Q1_followup_02",
+      "parent_question_id": "feedback_F9_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "行为发生了什么可观察的改变？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "行为发生了什么可观察的改变？",
+      "source_followup_text": "有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？",
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "feedback_F9_Q1_followup_03",
+      "parent_question_id": "feedback_F9_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "对方后来怎么评价？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "对方后来怎么评价？",
+      "source_followup_text": "有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？",
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "feedback_F9_Q2_followup_01",
+      "parent_question_id": "feedback_F9_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "收到过不认同的反馈吗？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "收到过不认同的反馈吗？",
+      "source_followup_text": "收到过不认同的反馈吗？照单全收还是怎么处理？",
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "feedback_F9_Q2_followup_02",
+      "parent_question_id": "feedback_F9_Q2",
+      "branch_type": "source_followup_unclassified",
+      "template": "照单全收还是怎么处理？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F9",
+      "source_question_index": 2,
+      "source_followup_index": 2,
+      "source_text": "照单全收还是怎么处理？",
+      "source_followup_text": "收到过不认同的反馈吗？照单全收还是怎么处理？",
+      "source_raw_text": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "learning_F10_Q1_followup_01",
+      "parent_question_id": "learning_F10_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "第一个请教的人是谁？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 1,
+      "source_followup_index": 1,
+      "source_text": "第一个请教的人是谁？",
+      "source_followup_text": "第一个请教的人是谁？第一步做的小试验？踩过什么坑？",
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "learning_F10_Q1_followup_02",
+      "parent_question_id": "learning_F10_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "第一步做的小试验？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 1,
+      "source_followup_index": 2,
+      "source_text": "第一步做的小试验？",
+      "source_followup_text": "第一个请教的人是谁？第一步做的小试验？踩过什么坑？",
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "learning_F10_Q1_followup_03",
+      "parent_question_id": "learning_F10_Q1",
+      "branch_type": "source_followup_unclassified",
+      "template": "踩过什么坑？",
+      "target_evidence": [],
+      "trigger_rule_id": null,
+      "trigger_description": null,
+      "stop_rule_id": null,
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 1,
+      "source_followup_index": 3,
+      "source_text": "踩过什么坑？",
+      "source_followup_text": "第一个请教的人是谁？第一步做的小试验？踩过什么坑？",
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_included_followup": true,
+      "review_status": "banked_not_active",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [],
+      "branch_version": "1.0.0",
+      "metadata_source": "source_question_mark_split"
+    },
+    {
+      "branch_id": "learning_F10_Q2_boundary",
+      "parent_question_id": "learning_F10_Q2",
+      "branch_type": "boundary_check",
+      "template": "如果规律在第二件事上不灵，你会怎么修正？",
+      "target_evidence": [
+        "boundary"
+      ],
+      "trigger_rule_id": "mt_followup_v1_proposed:boundary",
+      "trigger_description": "原回答提出方法且存在需要检验的适用边界",
+      "stop_rule_id": "mt_followup_v1_proposed:one_followup_per_interview",
+      "source_file_hash": "2c74c5778a175d6a8d95a27e6ee010f224a05dd66bc2d84971d56e282662cc19",
+      "source_sheet": "八因子提问清单",
+      "source_cell": "F10",
+      "source_question_index": 2,
+      "source_followup_index": 1,
+      "source_text": "如果规律在第二件事上不灵，你会怎么修正？",
+      "source_followup_text": "如果规律在第二件事上不灵，你会怎么修正？",
+      "source_raw_text": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+      "source_included_followup": true,
+      "review_status": "proposed_dev",
+      "business_approval_status": "not_reviewed",
+      "enabled_in_form_versions": [
+        "mt_short_v1_proposed"
+      ],
+      "branch_version": "1.0.0",
+      "metadata_source": "handoff_section_3_4"
+    }
+  ],
+  "short_form_proposal": {
+    "form_id": "mt_short_v1_proposed",
+    "config_status": "proposed",
+    "main_question_ids": [
+      "leadership_F3_Q1",
+      "results_K6",
+      "learning_F10_Q2"
+    ],
+    "allowed_branch_ids": [
+      "leadership_F3_Q1_action",
+      "leadership_F3_Q1_difficulty",
+      "leadership_F3_Q1_result",
+      "learning_F10_Q2_boundary"
+    ],
+    "max_main_questions": 3,
+    "max_followups": 1,
+    "max_visible_content_turns": 4,
+    "business_approval_status": "not_reviewed",
+    "requires_question_rubrics_in_interview_config": true
+  },
+  "source_workbook_snapshot": [
+    {
+      "sheet": "方法对比总表",
+      "visibility": "visible",
+      "max_row": 8,
+      "max_column": 9,
+      "merged_ranges": [
+        "A1:I1"
+      ],
+      "cells": {
+        "A1": {
+          "value": "六种面试/测评方法对比总表",
+          "data_type": "s"
+        },
+        "A2": {
+          "value": "方法",
+          "data_type": "s"
+        },
+        "B2": {
+          "value": "全称与出处",
+          "data_type": "s"
+        },
+        "C2": {
+          "value": "理论基础",
+          "data_type": "s"
+        },
+        "D2": {
+          "value": "测量对象",
+          "data_type": "s"
+        },
+        "E2": {
+          "value": "效度（元分析）",
+          "data_type": "s"
+        },
+        "F2": {
+          "value": "评分者信度",
+          "data_type": "s"
+        },
+        "G2": {
+          "value": "标准化程度",
+          "data_type": "s"
+        },
+        "H2": {
+          "value": "成本",
+          "data_type": "s"
+        },
+        "I2": {
+          "value": "适用环节",
+          "data_type": "s"
+        },
+        "A3": {
+          "value": "STAR追问法",
+          "data_type": "s"
+        },
+        "B3": {
+          "value": "行为面试中的叙事结构，非独立方法",
+          "data_type": "s"
+        },
+        "C3": {
+          "value": "行为一致性（过去预测未来）",
+          "data_type": "s"
+        },
+        "D3": {
+          "value": "过去的真实行为",
+          "data_type": "s"
+        },
+        "E3": {
+          "value": "依附于BDI，本身无效度数据",
+          "data_type": "s"
+        },
+        "F3": {
+          "value": "依赖面试官技巧，波动大",
+          "data_type": "s"
+        },
+        "G3": {
+          "value": "低",
+          "data_type": "s"
+        },
+        "H3": {
+          "value": "低",
+          "data_type": "s"
+        },
+        "I3": {
+          "value": "行为面试的追问环节",
+          "data_type": "s"
+        },
+        "A4": {
+          "value": "BDI行为描述面试",
+          "data_type": "s"
+        },
+        "B4": {
+          "value": "Janz (1982) PBDI",
+          "data_type": "s"
+        },
+        "C4": {
+          "value": "行为一致性",
+          "data_type": "s"
+        },
+        "D4": {
+          "value": "过去行为",
+          "data_type": "s"
+        },
+        "E4": {
+          "value": ".45–.56（Taylor & Small, 2002）",
+          "data_type": "s"
+        },
+        "F4": {
+          "value": ".92（Klehe & Latham）",
+          "data_type": "s"
+        },
+        "G4": {
+          "value": "中-高",
+          "data_type": "s"
+        },
+        "H4": {
+          "value": "中",
+          "data_type": "s"
+        },
+        "I4": {
+          "value": "复试深度挖掘；高复杂度岗位更优",
+          "data_type": "s"
+        },
+        "A5": {
+          "value": "SI情景面试",
+          "data_type": "s"
+        },
+        "B5": {
+          "value": "Latham et al. (1980)",
+          "data_type": "s"
+        },
+        "C5": {
+          "value": "目标设定理论（意图→行为）",
+          "data_type": "s"
+        },
+        "D5": {
+          "value": "假设情境中的行为意图",
+          "data_type": "s"
+        },
+        "E5": {
+          "value": ".45–.47（校正后）；预测最优绩效优于BDI",
+          "data_type": "s"
+        },
+        "F5": {
+          "value": ".83",
+          "data_type": "s"
+        },
+        "G5": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "H5": {
+          "value": "中",
+          "data_type": "s"
+        },
+        "I5": {
+          "value": "初/复试；低-中复杂度岗位更优",
+          "data_type": "s"
+        },
+        "A6": {
+          "value": "SJT情景判断测验",
+          "data_type": "s"
+        },
+        "B6": {
+          "value": "标准化书面/视频测验",
+          "data_type": "s"
+        },
+        "C6": {
+          "value": "同SI，完全客观化",
+          "data_type": "s"
+        },
+        "D6": {
+          "value": "情境判断",
+          "data_type": "s"
+        },
+        "E6": {
+          "value": ".26–.40（随构念变化）",
+          "data_type": "s"
+        },
+        "F6": {
+          "value": "无需评委（客观评分）",
+          "data_type": "s"
+        },
+        "G6": {
+          "value": "最高",
+          "data_type": "s"
+        },
+        "H6": {
+          "value": "低",
+          "data_type": "s"
+        },
+        "I6": {
+          "value": "大规模初筛",
+          "data_type": "s"
+        },
+        "A7": {
+          "value": "工作样本测试",
+          "data_type": "s"
+        },
+        "B7": {
+          "value": "Schmidt & Hunter (1998) 效度榜首",
+          "data_type": "s"
+        },
+        "C7": {
+          "value": "直接绩效模拟",
+          "data_type": "s"
+        },
+        "D7": {
+          "value": "真实任务产出",
+          "data_type": "s"
+        },
+        "E7": {
+          "value": "ρ≈.54（单项最高）；与结构化面试组合≥.63",
+          "data_type": "s"
+        },
+        "F7": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "G7": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "H7": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "I7": {
+          "value": "终试/关键岗位",
+          "data_type": "s"
+        },
+        "A8": {
+          "value": "评价中心AC",
+          "data_type": "s"
+        },
+        "B8": {
+          "value": "多方法×多评委",
+          "data_type": "s"
+        },
+        "C8": {
+          "value": "多维构念综合",
+          "data_type": "s"
+        },
+        "D8": {
+          "value": "综合潜力",
+          "data_type": "s"
+        },
+        "E8": {
+          "value": ".36–.37",
+          "data_type": "s"
+        },
+        "F8": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "G8": {
+          "value": "高",
+          "data_type": "s"
+        },
+        "H8": {
+          "value": "最高",
+          "data_type": "s"
+        },
+        "I8": {
+          "value": "高潜终评",
+          "data_type": "s"
+        }
+      }
+    },
+    {
+      "sheet": "SI稳定性机制",
+      "visibility": "hidden",
+      "max_row": 6,
+      "max_column": 4,
+      "merged_ranges": [
+        "A1:D1"
+      ],
+      "cells": {
+        "A1": {
+          "value": "Latham SI 情景面试的四重稳定性机制",
+          "data_type": "s"
+        },
+        "A2": {
+          "value": "机制",
+          "data_type": "s"
+        },
+        "B2": {
+          "value": "具体做法",
+          "data_type": "s"
+        },
+        "C2": {
+          "value": "解决的不稳定来源",
+          "data_type": "s"
+        },
+        "D2": {
+          "value": "关键证据",
+          "data_type": "s"
+        },
+        "A3": {
+          "value": "①题目源于关键事件",
+          "data_type": "s"
+        },
+        "B3": {
+          "value": "用Flanagan关键事件法（CIT）收集在职者真实两难事件改写出题",
+          "data_type": "s"
+        },
+        "C3": {
+          "value": "题目脱离岗位实际",
+          "data_type": "s"
+        },
+        "D3": {
+          "value": "Latham et al. (1980)",
+          "data_type": "s"
+        },
+        "A4": {
+          "value": "②情景内置两难",
+          "data_type": "s"
+        },
+        "B4": {
+          "value": "题目必须包含利益/目标冲突，正确答案不透明",
+          "data_type": "s"
+        },
+        "C4": {
+          "value": "候选人“猜考点、装答案”",
+          "data_type": "s"
+        },
+        "D4": {
+          "value": "Latham & Itzchakov (2021)：两难显著削弱ATIC效应",
+          "data_type": "s"
+        },
+        "A5": {
+          "value": "③预设锚定评分BARS",
+          "data_type": "s"
+        },
+        "B5": {
+          "value": "出题时由专家事先写好5分/3分/1分标准回答",
+          "data_type": "s"
+        },
+        "C5": {
+          "value": "面试官凭感觉打分",
+          "data_type": "s"
+        },
+        "D5": {
+          "value": "评分者信度.83–.92",
+          "data_type": "s"
+        },
+        "A6": {
+          "value": "④全程固定",
+          "data_type": "s"
+        },
+        "B6": {
+          "value": "所有候选人同题、同序、追问规则统一",
+          "data_type": "s"
+        },
+        "C6": {
+          "value": "临场发挥带来的方差",
+          "data_type": "s"
+        },
+        "D6": {
+          "value": "Schmidt & Hunter (1998)：结构化使效度.38→.51",
+          "data_type": "s"
+        }
+      }
+    },
+    {
+      "sheet": "效度数据速查",
+      "visibility": "hidden",
+      "max_row": 8,
+      "max_column": 3,
+      "merged_ranges": [
+        "A1:C1"
+      ],
+      "cells": {
+        "A1": {
+          "value": "六项关键效度研究数据速查",
+          "data_type": "s"
+        },
+        "A2": {
+          "value": "研究",
+          "data_type": "s"
+        },
+        "B2": {
+          "value": "结论",
+          "data_type": "s"
+        },
+        "C2": {
+          "value": "数据",
+          "data_type": "s"
+        },
+        "A3": {
+          "value": "Taylor & Small (2002)",
+          "data_type": "s"
+        },
+        "B3": {
+          "value": "BDI vs SI 校正效度",
+          "data_type": "s"
+        },
+        "C3": {
+          "value": "BDI .56 vs SI .45",
+          "data_type": "s"
+        },
+        "A4": {
+          "value": "Latham & Sue-Chan (1999)",
+          "data_type": "s"
+        },
+        "B4": {
+          "value": "SI 校正效度",
+          "data_type": "s"
+        },
+        "C4": {
+          "value": ".47",
+          "data_type": "s"
+        },
+        "A5": {
+          "value": "Culbertson et al. (2017)",
+          "data_type": "s"
+        },
+        "B5": {
+          "value": "SI vs BDI 预测绩效",
+          "data_type": "s"
+        },
+        "C5": {
+          "value": "SI .23 > BDI .18",
+          "data_type": "s"
+        },
+        "A6": {
+          "value": "Klehe & Latham",
+          "data_type": "s"
+        },
+        "B6": {
+          "value": "SI可预测最优绩效，BDI不能",
+          "data_type": "s"
+        },
+        "C6": {
+          "value": "SI r=.25 vs BDI r=.11（最优绩效）",
+          "data_type": "s"
+        },
+        "A7": {
+          "value": "Huffcutt et al. (2003)",
+          "data_type": "s"
+        },
+        "B7": {
+          "value": "岗位复杂度调节效应",
+          "data_type": "s"
+        },
+        "C7": {
+          "value": "高复杂度岗位：SI效度下降，BDI不受影响",
+          "data_type": "s"
+        },
+        "A8": {
+          "value": "Schmidt & Hunter (1998)",
+          "data_type": "s"
+        },
+        "B8": {
+          "value": "结构化 vs 非结构化面试",
+          "data_type": "s"
+        },
+        "C8": {
+          "value": ".51 vs .38",
+          "data_type": "s"
+        }
+      }
+    },
+    {
+      "sheet": "八因子提问清单",
+      "visibility": "visible",
+      "max_row": 10,
+      "max_column": 12,
+      "merged_ranges": [
+        "A1:L1"
+      ],
+      "cells": {
+        "A1": {
+          "value": "管理培训生面试提问清单（潜力模型八因子）",
+          "data_type": "s"
+        },
+        "A2": {
+          "value": "维度",
+          "data_type": "s"
+        },
+        "B2": {
+          "value": "因子",
+          "data_type": "s"
+        },
+        "C2": {
+          "value": "因子定义",
+          "data_type": "s"
+        },
+        "D2": {
+          "value": "理论支撑",
+          "data_type": "s"
+        },
+        "E2": {
+          "value": "考察内容",
+          "data_type": "s"
+        },
+        "F2": {
+          "value": "行为面试问题（含追问）",
+          "data_type": "s"
+        },
+        "G2": {
+          "value": "优秀回答特征",
+          "data_type": "s"
+        },
+        "H2": {
+          "value": "风险回答信号",
+          "data_type": "s"
+        },
+        "I2": {
+          "value": "高频正面词语",
+          "data_type": "s"
+        },
+        "J2": {
+          "value": "高频风险词语",
+          "data_type": "s"
+        },
+        "K2": {
+          "value": "情景面试题",
+          "data_type": "s"
+        },
+        "L2": {
+          "value": "情景题观察点",
+          "data_type": "s"
+        },
+        "A3": {
+          "value": "领导倾向",
+          "data_type": "s"
+        },
+        "B3": {
+          "value": "领导意愿",
+          "data_type": "s"
+        },
+        "C3": {
+          "value": "是否愿意承担影响他人、协调工作、对团队结果负责的角色。不是单看外向或想升职。",
+          "data_type": "s"
+        },
+        "D3": {
+          "value": "领导动机理论MTL（Chan & Drasgow, 2001）\n领导涌现元分析（Judge et al., 2002）\n潜力识别动机维度（Silzer & Church, 2009）",
+          "data_type": "s"
+        },
+        "E3": {
+          "value": "是否主动承担过牵头、协调、兜底的角色\n动机是\"对团队结果负责\"还是\"想要头衔\"\n对领导角色的代价（协调冲突、替团队扛责）是否有真实认知",
+          "data_type": "s"
+        },
+        "F3": {
+          "value": "Q1：请讲一次你在团队项目中主动站出来承担组织协调角色的经历。当时为什么是你站出来？（追问：具体做了哪些协调动作？最难处理的人或事？结果如何？）\nQ2：讲一次团队陷入僵局、没人愿意牵头时你采取的行动。（追问：没人响应你怎么办？事后如何评价自己的做法？）",
+          "data_type": "s"
+        },
+        "G3": {
+          "value": "事例具体，有分工、跟进、兜底、复盘动作\n关注\"事情做成了、团队变好了\"而非个人风头\n能坦诚讲出牵头代价及取舍",
+          "data_type": "s"
+        },
+        "H3": {
+          "value": "把领导等同于头衔或成绩好\n抢功贬低队友（\"他们都不行，最后都是我做的\"）\n所有事例都是\"老师指定的\"",
+          "data_type": "s"
+        },
+        "I3": {
+          "value": "我主动牵头\n分工\n协调\n兜底\n对结果负责\n复盘\n扛下来\n我站出来\n跟进进度\n统一目标\n带着大家一起",
+          "data_type": "s"
+        },
+        "J3": {
+          "value": "老师让我当\n他们都不行\n我指挥他们\n反正最后是我做的\n图个头衔\n挂名\n我说了算\n没人听就算了",
+          "data_type": "s"
+        },
+        "K3": {
+          "value": "假设你带领5人小组做市场调研，截止前3天发现两名成员进度严重落后且互相推诿，组里气氛开始对立。你接下来72小时会做什么？",
+          "data_type": "s"
+        },
+        "L3": {
+          "value": "是否先对齐目标与事实（而非先追责）\n有无具体分工与跟进机制\n是否愿意自己兜底\n如何处理对立情绪",
+          "data_type": "s"
+        },
+        "A4": {
+          "value": "领导倾向",
+          "data_type": "s"
+        },
+        "B4": {
+          "value": "成就他人",
+          "data_type": "s"
+        },
+        "C4": {
+          "value": "是否愿意帮助别人发挥长处、成长并取得成果，而不只是自己做得出色。",
+          "data_type": "s"
+        },
+        "D4": {
+          "value": "变革型领导\"个性化关怀\"（Bass, 1985；Bass & Riggio, 2006）\n服务型领导（Greenleaf, 1970；Liden et al., 2008）\n管理者教练行为（Ellinger & Bostrom, 1999）",
+          "data_type": "s"
+        },
+        "E4": {
+          "value": "是否有\"让别人变得更好\"的真实行为记录\n帮助时是\"授人以渔\"还是\"替他做完\"\n面对竞争关系是否仍愿意成就对方",
+          "data_type": "s"
+        },
+        "F4": {
+          "value": "Q1：请讲一次你帮助某位同学/同事提升能力或取得明显进步的经历，你具体做了什么？（追问：对方在哪一点上变强了？你怎么知道的？投入多少时间，值不值？）\nQ2：有没有过你把有效的方法或资源分享给一个和你存在竞争关系的人？当时怎么想的？（追问：如果对方因此超过你，你能接受吗？真实发生过吗？）",
+          "data_type": "s"
+        },
+        "G4": {
+          "value": "能讲出\"教方法\"而非\"代劳\"的过程\n能具体描述对方的前后变化\n对\"帮助他人可能被超越\"有成熟看法",
+          "data_type": "s"
+        },
+        "H4": {
+          "value": "所谓帮助实为代劳\n居高临下贬损被帮助者\n明确不愿在竞争场景分享且认为理所当然",
+          "data_type": "s"
+        },
+        "I4": {
+          "value": "教他方法\n陪他过一遍\n他后来能独立\n发挥他擅长的\n把机会让给他\n拆给他看\n让他主讲\n帮他争取资源\n每周带教\n给他反馈",
+          "data_type": "s"
+        },
+        "J4": {
+          "value": "我帮他做完\n他太菜了\n没必要浪费时间\n凭什么教他\n教会徒弟饿死师傅\n他自己不学\n直接替他做\n带不动",
+          "data_type": "s"
+        },
+        "K4": {
+          "value": "你组里有一位能力很强的成员，但习惯单打独斗、从不带新人，导致新人成长慢、团队过度依赖他。作为组长，你会怎么处理？",
+          "data_type": "s"
+        },
+        "L4": {
+          "value": "能否既保护高绩效者积极性，又设计机制让其经验沉淀给他人（结对、分享会、带教目标）\n避免\"批评强者\"或\"放任不管\"两个极端",
+          "data_type": "s"
+        },
+        "A5": {
+          "value": "领导倾向",
+          "data_type": "s"
+        },
+        "B5": {
+          "value": "平衡人际与任务",
+          "data_type": "s"
+        },
+        "C5": {
+          "value": "能否既推动目标和进度，也照顾沟通、合作和关系。",
+          "data_type": "s"
+        },
+        "D5": {
+          "value": "领导行为双维度理论（俄亥俄州立研究，定规×关怀；Fleishman, 1953）\n管理方格理论（Blake & Mouton, 1964）\n冲突处理策略模型（Thomas-Kilmann, 1974）",
+          "data_type": "s"
+        },
+        "E5": {
+          "value": "面对\"事\"与\"人\"的张力时两头兼顾还是牺牲一端\n是否有坚持正确做法同时维护关系的具体沟通策略\n对冲突是回避、硬刚还是有策略地面对",
+          "data_type": "s"
+        },
+        "F5": {
+          "value": "Q1：讲一次你必须在赶进度的同时处理团队内部意见分歧的经历，你是怎么平衡的？（追问：单独和谁沟通过？说了什么？进度和关系最终状态？）\nQ2：有没有过一次你为了坚持自己认为正确的做法而得罪人的经历？事后如何修复这段关系？（追问：重来一次会调整\"坚持\"的部分还是\"沟通\"的部分？）",
+          "data_type": "s"
+        },
+        "G5": {
+          "value": "不回避冲突也不牺牲目标，有具体沟通策略（私下沟通、先听顾虑、用事实对齐）\n结果与关系都有交代\n知道自己在哪端偏科并有矫正动作",
+          "data_type": "s"
+        },
+        "H5": {
+          "value": "极端任务导向（\"我只看结果\"）\n极端关系导向（\"不想得罪人就算了\"）\n把分歧上升为对人的评价",
+          "data_type": "s"
+        },
+        "I5": {
+          "value": "先听他的顾虑\n对齐目标\n会后单独聊\n折中方案\n对事不对人\n换位思考\n私下沟通\n给个台阶\n先说共同点\n事也要办成",
+          "data_type": "s"
+        },
+        "J5": {
+          "value": "直接怼回去\n随便他们\n我不管过程只要结果\n懒得解释\n忍不了\n大不了散伙\n我退出\n爱干不干",
+          "data_type": "s"
+        },
+        "K5": {
+          "value": "和你关系最好的一位同事负责的部分质量不达标，返工会直接影响他本月绩效评价；不返工则拖累整个项目交付。你会怎么做？会不会告诉他？",
+          "data_type": "s"
+        },
+        "L5": {
+          "value": "是否直面问题（不当老好人）\n沟通方式（私下/公开、对事/对人）\n是否提供补救支持而非单纯告状或包庇",
+          "data_type": "s"
+        },
+        "A6": {
+          "value": "业务驱动",
+          "data_type": "s"
+        },
+        "B6": {
+          "value": "结果导向",
+          "data_type": "s"
+        },
+        "C6": {
+          "value": "是否持续盯住目标，遇到障碍时还能想办法把事情做成。它关注的不只是已有业绩数字。",
+          "data_type": "s"
+        },
+        "D6": {
+          "value": "成就需要理论（McClelland, 1961）\n目标设定理论（Locke & Latham, 1990/2002）\n坚毅Grit（Duckworth et al., 2007）",
+          "data_type": "s"
+        },
+        "E6": {
+          "value": "目标是否清晰可量化\n遇到障碍时多路径尝试还是调整目标/放弃/归因外部\n对未达成的结果是否诚实、有无补救复盘",
+          "data_type": "s"
+        },
+        "F6": {
+          "value": "Q1：讲一次你设定的一个重要目标中途遇到重大阻碍，你最终是怎么推进的？（追问：试过几种办法？哪种无效、为什么？达成度多少？）\nQ2：讲一次你没有达成目标的经历。差在哪里？后来做了什么？（追问：目标是自己定的还是被安排的？失败后下一个目标是什么？）",
+          "data_type": "s"
+        },
+        "G6": {
+          "value": "目标有数字有截止时间\n障碍具体\n2种以上尝试路径\n主动同步风险而非最后一刻暴露\n对失败诚实并能量化差距",
+          "data_type": "s"
+        },
+        "H6": {
+          "value": "目标模糊无法量化\n一遇困难就调整目标且视为理所当然\n失败全部归因外部",
+          "data_type": "s"
+        },
+        "I6": {
+          "value": "倒排计划\n试了三种办法\n提前同步风险\n差了5%但我\n每周对进度\n卡住就换路径\n主动争取资源\n千方百计\n提前两天交付",
+          "data_type": "s"
+        },
+        "J6": {
+          "value": "没办法\n资源不够所以\n后来就算了\n差不多就行\n看情况吧\n尽力了（无细节）\n运气不好\n目标定太高",
+          "data_type": "s"
+        },
+        "K6": {
+          "value": "实习期间领导给你定了\"一个月拉新1万人\"的目标，两周过去只完成20%，且明确告知预算不能增加。接下来两周你会做什么？",
+          "data_type": "s"
+        },
+        "L6": {
+          "value": "先做归因分析还是先喊难\n能否提出低成本替代路径（渠道置换、社群裂变、异业合作）\n是否主动与领导校准目标而非默默躺平",
+          "data_type": "s"
+        },
+        "A7": {
+          "value": "业务驱动",
+          "data_type": "s"
+        },
+        "B7": {
+          "value": "全局思维",
+          "data_type": "s"
+        },
+        "C7": {
+          "value": "能否把手头任务放到更大的业务背景里看，理解上下游影响和不同目标之间的联系。",
+          "data_type": "s"
+        },
+        "D7": {
+          "value": "管理者三技能模型-概念技能（Katz, 1955）\n系统思维（Senge, 1990《第五项修炼》）\n认知复杂性（Streufert & Swezey, 1986）",
+          "data_type": "s"
+        },
+        "E7": {
+          "value": "能否说清\"这件事为什么存在\"（业务目标、上下游、利益相关方）\n是否有\"局部最优≠全局最优\"的识别经历\n对部门目标冲突的理解力（应届生可放宽到社团/项目层面）",
+          "data_type": "s"
+        },
+        "F7": {
+          "value": "Q1：讲一次你发现\"对自己/本小组最有利的做法\"对整体反而不利，并调整了自己做法的经历。（追问：怎么发现冲突的？调整让你付出什么代价？）\nQ2：在你印象最深的一个项目里，你的工作成果会被谁使用？使用方式是什么？如果你的环节出问题会连累谁？（追问：做之前就知道还是事后才明白？改变了做事方式吗？）",
+          "data_type": "s"
+        },
+        "G7": {
+          "value": "能把任务放进业务链条讲（上游输入、下游去向、整体目标）\n有放弃局部利益换取整体结果的事例\n主动了解上下游工作方式",
+          "data_type": "s"
+        },
+        "H7": {
+          "value": "只能描述执行动作，说不清为什么做\n\"我只负责我这块\"式边界感\n从未意识到产出有下游使用者",
+          "data_type": "s"
+        },
+        "I7": {
+          "value": "上游/下游\n对整体的影响\n从业务目标倒推\n利益相关方\n局部和全局\n牵一发动全身\n系统地看\n价值链\n短期指标与长期品牌\n站在公司角度",
+          "data_type": "s"
+        },
+        "J7": {
+          "value": "领导让做的\n我只负责我这块\n不清楚整体\n跟我没关系\n那是别的部门的事\n想那么多干嘛\n反正我做完就行",
+          "data_type": "s"
+        },
+        "K7": {
+          "value": "公司要求门店提升会员注册数。你发现店员为冲指标向顾客隐瞒了会员自动续费条款，注册数大涨但投诉量同步上升。如果你是区域管培生，你会怎么看待和处理？",
+          "data_type": "s"
+        },
+        "L7": {
+          "value": "能否看到\"指标—体验—品牌—长期收入\"链条\n是否只停留在\"店员做错了\"\n能否提出指标设计与执行机制两端的改进建议",
+          "data_type": "s"
+        },
+        "A8": {
+          "value": "业务驱动",
+          "data_type": "s"
+        },
+        "B8": {
+          "value": "适应力",
+          "data_type": "s"
+        },
+        "C8": {
+          "value": "情况变化、信息不全或要求冲突时，能否调整做法继续推进。",
+          "data_type": "s"
+        },
+        "D8": {
+          "value": "适应性绩效模型八维度（Pulakos et al., 2000）\n学习敏锐度之变革敏锐度（Lombardo & Eichinger, 2000）\n个人适应力I-ADAPT理论（Ployhart & Bliese, 2006）",
+          "data_type": "s"
+        },
+        "E8": {
+          "value": "计划被打乱后的第一反应（情绪停摆还是快速重排）\n信息不全时是否敢先动起来边做边校准\n面对冲突要求（两个领导、两条标准）如何处理",
+          "data_type": "s"
+        },
+        "F8": {
+          "value": "Q1：讲一次你的计划被彻底打乱（场地、人员、规则临时变化），你在很短时间内调整并保住结果的经历。（追问：最先做的三件事？放弃了什么、保住了什么？）\nQ2：讲一次你不得不在信息很不完整的情况下做决定的经历。你依据什么做的决定？（追问：事后证明对吗？错了多快发现、怎么纠偏？）",
+          "data_type": "s"
+        },
+        "G8": {
+          "value": "情绪稳定，调整快且有条理（先保核心目标再重排资源）\n信息不全时用\"最小可行行动+快速验证\"\n对变化持中性甚至积极态度",
+          "data_type": "s"
+        },
+        "H8": {
+          "value": "大篇幅抱怨变化不合理而行动单薄\n停摆等待\"等领导明确了再说\"\n对模糊要求不做澄清埋头按自己理解做",
+          "data_type": "s"
+        },
+        "I8": {
+          "value": "先保核心目标\nB计划\n边做边调\n快速验证\n重排优先级\n先跑起来再说\n及时止损\n小步快跑\n先澄清假设\n接受不完美",
+          "data_type": "s"
+        },
+        "J8": {
+          "value": "太离谱了\n等政策明确再说\n我就先放着\n为什么又改\n早干嘛去了\n等通知\n我按原计划做\n改来改去没法干",
+          "data_type": "s"
+        },
+        "K8": {
+          "value": "汇报前一天，领导临时通知方案方向要从A改为B，但他只有一个模糊的想法，说不清具体要求，明天就要用。你今晚怎么安排？",
+          "data_type": "s"
+        },
+        "L8": {
+          "value": "是否先花少量时间向领导澄清关键假设\n能否在A方案素材基础上快速重组\n有无\"先做60分版本+准备现场调整\"的务实策略",
+          "data_type": "s"
+        },
+        "A9": {
+          "value": "成长性",
+          "data_type": "s"
+        },
+        "B9": {
+          "value": "接纳反馈",
+          "data_type": "s"
+        },
+        "C9": {
+          "value": "能否听取反馈、反思自己的影响，并把反馈转成行为上的调整。它不等于一味顺从批评。",
+          "data_type": "s"
+        },
+        "D9": {
+          "value": "反馈寻求行为FSB（Ashford & Cummings, 1983）\n反馈导向量表（Linderbaum & Levy, 2010）\n成长型思维与学习目标导向（Dweck, 2006；VandeWalle, 1997）",
+          "data_type": "s"
+        },
+        "E9": {
+          "value": "是否有\"反馈→反思→行为改变→验证\"完整闭环\n面对尖锐批评是防御、表面顺从还是追问细节\n是否主动寻求反馈\n能否区分\"接纳反馈\"与\"放弃判断\"",
+          "data_type": "s"
+        },
+        "F9": {
+          "value": "Q1：讲一次你收到让你不舒服、甚至觉得难堪的批评。你当时什么反应？后来做了什么？（追问：有没有追问具体细节？行为发生了什么可观察的改变？对方后来怎么评价？）\nQ2：最近一次你主动向别人寻求反馈是什么时候？问了谁、问了什么、之后改变了什么？（追问：收到过不认同的反馈吗？照单全收还是怎么处理？）",
+          "data_type": "s"
+        },
+        "G9": {
+          "value": "能讲出完整闭环（听到→追问具体场景→调整行为→验证效果）\n对不认同的反馈能说明甄别过程\n有主动寻求反馈的习惯性动作",
+          "data_type": "s"
+        },
+        "H9": {
+          "value": "只有态度没有实例\n防御性归因（\"他不懂实际情况\"）\n阳奉阴违\n毫无判断的全盘顺从",
+          "data_type": "s"
+        },
+        "I9": {
+          "value": "我追问了具体哪里\n后来我改成\n三个月后他说好转了\n定期请人挑刺\n复盘会\n主动问意见\n记下来逐条改\n验证效果\n先感谢再澄清\n反馈清单",
+          "data_type": "s"
+        },
+        "J9": {
+          "value": "他不懂实际情况\n表面答应\n懒得争\n其实我没改\n那是偏见\n他说他的我做我的\n我都接受（无实例）\n没必要当真",
+          "data_type": "s"
+        },
+        "K9": {
+          "value": "转正答辩现场，一位评委当众评价你的方案\"逻辑混乱、不像管培生的水平\"。你当场会如何回应？答辩结束后你会做什么？",
+          "data_type": "s"
+        },
+        "L9": {
+          "value": "当场是否克制且聚焦问题本身（询问具体哪里混乱）\n会后是否主动找评委复盘形成改进清单\n还是当场辩解、会后吐槽",
+          "data_type": "s"
+        },
+        "A10": {
+          "value": "成长性",
+          "data_type": "s"
+        },
+        "B10": {
+          "value": "学习敏锐度",
+          "data_type": "s"
+        },
+        "C10": {
+          "value": "能否从新任务、经验甚至失败中快速学到东西，并把学到的方法用到新情境里。它也不只是\"爱上课\"。",
+          "data_type": "s"
+        },
+        "D10": {
+          "value": "学习敏锐度（Lombardo & Eichinger, 2000）\n构念理论化（De Meuse et al., 2010；DeRue et al., 2012）\n经验学习圈（Kolb, 1984）\n高潜识别维度框架（Silzer & Church, 2009）",
+          "data_type": "s"
+        },
+        "E10": {
+          "value": "面对陌生领域是否有方法论（拆解、找对人请教、最小实践、快速迭代）\n能否把A情境经验迁移到B情境（与\"爱学习\"的关键区别）\n从失败中提取规律的能力",
+          "data_type": "s"
+        },
+        "F10": {
+          "value": "Q1：讲一次你在完全陌生的领域/任务里快速上手的经历。你具体是怎么学的？多久达到可用水平？（追问：第一个请教的人是谁？第一步做的小试验？踩过什么坑？）\nQ2：讲一次失败的经历。你从中提炼出了什么方法或规律？后来在哪件不同的事情上用上了？（追问：如果规律在第二件事上不灵，你会怎么修正？）",
+          "data_type": "s"
+        },
+        "G10": {
+          "value": "学习路径清晰（拆解→找标杆/请教→最小闭环实践→复盘迭代）且有时间感\n能明确说出从A到B的迁移及效果\n失败复盘产出可复用规律而非空话",
+          "data_type": "s"
+        },
+        "H10": {
+          "value": "把学习等同于上课/考证/刷课而无实践转化\n学了很多但无一例迁移\n失败归因全部外部、提炼不出规律",
+          "data_type": "s"
+        },
+        "I10": {
+          "value": "先跑通最小闭环\n拆解\n请教了三个人\n复盘出三条规律\n后来用在\n迁移到\n找标杆\n边干边学\n两周上手\n提炼方法\n快速迭代",
+          "data_type": "s"
+        },
+        "J10": {
+          "value": "我报了个班\n还没机会用\n主要是运气不好\n看了很多教程\n学完就忘了\n没时间实践\n理论都懂\n一学就会一做就废",
+          "data_type": "s"
+        },
+        "K10": {
+          "value": "给你48小时，向管理层做一次关于\"公司是否进入一个你从未接触过的行业（如宠物医疗）\"的简报。你会怎么安排这48小时的学习和内容组织？",
+          "data_type": "s"
+        },
+        "L10": {
+          "value": "有无信息源策略（报告/从业者/竞品）\n是否先搭判断框架再填信息\n如何对待信息缺口（标注假设而非硬编）\n时间分配是否体现\"最小可行认知\"思路",
+          "data_type": "s"
+        }
+      }
+    }
+  ],
+  "source_comparison": {
+    "factor_count": 8,
+    "main_question_count": 24,
+    "behavioral_question_count": 16,
+    "situational_question_count": 8,
+    "source_followup_groups": 16,
+    "followup_branch_count": 36,
+    "enabled_branch_count": 4,
+    "unique_question_ids": true,
+    "unique_branch_ids": true,
+    "all_branch_texts_are_source_substrings": true,
+    "appendix_comparison_count": 104,
+    "appendix_comparison_passed": 104,
+    "appendix_mismatches": [],
+    "source_files_unchanged": true
+  },
+  "interpretation_limits": [
+    "原表G/H为因子级参考，不是24题的完整评分锚点。",
+    "原表I/J没有本项目词频统计，仅保留来源，不按词频加减分。",
+    "隐藏页理论与效度数据仅为用户材料，不是本系统验证成绩。",
+    "原表关于情绪、心理或人格的措辞仅作来源留存，不在该题库提取流程中执行推断。",
+    "岗位说明中的职责权重不自动映射到面试题权重。"
+  ]
+}

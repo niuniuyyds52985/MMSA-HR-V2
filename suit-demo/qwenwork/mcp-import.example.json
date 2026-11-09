@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "zhenjian-interview": {
+      "type": "stdio",
+      "command": "C:/REPLACE_WITH_LOCAL_PROJECT/.venv-suit/Scripts/python.exe",
+      "args": [
+        "C:/REPLACE_WITH_LOCAL_PROJECT/suit-demo/interview_mcp.py",
+        "--base-url",
+        "http://127.0.0.1:8766"
+      ],
+      "env": {
+        "PYTHONUTF8": "1"
+      }
+    }
+  }
+}

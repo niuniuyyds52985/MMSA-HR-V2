@@ -1,0 +1,48 @@
+{
+  "asset": "tongji-qwen-challenge-poster.jpg",
+  "title": "第一届 AI 管理实践挑战赛 · 同济加油",
+  "article_title": "同济大学x千问办公｜用AI重塑管理，等你组队！",
+  "article_url": "https://www.thepaper.cn/newsDetail_forward_34298638",
+  "original_article_url": "https://mp.weixin.qq.com/s/c43uR_vBC7XdnN4e5XxVtQ",
+  "article_attribution": "转自：同济经管青春范儿",
+  "article_date": "2026-10-20",
+  "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/819a3d2a-3515-4488-9592-78b7252ba0cd.jpg",
+  "checked_at": "2026-11-08",
+  "use": "活动原图作为来源资料保留；当前入场页采用真才实鉴原创 HTML/CSS/SVG 欢迎海报，保留活动原文入口，不将原图图册作为主视觉，不宣称官方认证。",
+  "display_copy": "赛事名称及方向依据活动文章；作品介绍、校园与对话插画及版式为本项目原创。",
+  "official_index_url": "https://mba.tongji.edu.cn/zsxx/jqhd.htm",
+  "official_index_entry": "2026-10-21 【活动报名】同济大学x千问办公｜用AI重塑管理，等你组队！",
+  "official_index_target": "https://mp.weixin.qq.com/s/ZUhdL4z9dNeoA-jE84FH1Q",
+  "brochure_pages": [
+    {
+      "asset": "tongji-qwen-challenge-directions.jpg",
+      "title": "七大选题方向",
+      "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/eb7fdbeb-9705-4574-97cb-444223ab2ec7.jpg",
+      "sha256": "f465719d534a9ce0a5bdab5280374b9f885baf5d8885ab8c3a8169a228a62a95"
+    },
+    {
+      "asset": "tongji-qwen-challenge-rules.jpg",
+      "title": "报名、组队及作品规则",
+      "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/4b54b2b7-ef0e-4ca5-8296-2ab7bf7f78af.jpg",
+      "sha256": "62b715aa502fd1e635b3a5212bc40757d686ff47d340e719a483bef839fab178"
+    },
+    {
+      "asset": "tongji-qwen-challenge-schedule.jpg",
+      "title": "完整赛程",
+      "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/37711d24-ada6-4d0e-bedb-511b313ce29e.jpg",
+      "sha256": "60bac12f16ec99b3d5ae6e75ad24a568f9858b5b326ad0da4606410e950c8e9d"
+    },
+    {
+      "asset": "tongji-qwen-challenge-awards.jpg",
+      "title": "奖项设置",
+      "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/444749f4-13b0-454d-a79b-efe6fc6db41f.jpg",
+      "sha256": "a1a398667ca1009235c699cadddda1d279a24e63cc679dbfdcf08f21fbed589b"
+    },
+    {
+      "asset": "tongji-qwen-challenge-poster.jpg",
+      "title": "第一届 AI 管理实践挑战赛 · 同济加油",
+      "image_url": "https://imgpai.thepaper.cn/pphimage/20261021/819a3d2a-3515-4488-9592-78b7252ba0cd.jpg",
+      "sha256": "00fda27d63b78732c27bd7f7a0bac2b47775afb2d1f947491a9f5bc35ce20c4d"
+    }
+  ]
+}

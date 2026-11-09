@@ -1,0 +1,48 @@
+{
+  "schema_version": "synthetic-text-contract.v1",
+  "purpose": "Exact-source and transport contract cases only; not gold labels, participant data, or semantic accuracy evaluation.",
+  "cases": [
+    {
+      "case_id": "negation",
+      "question_id": "leadership_F3_Q1",
+      "transcript": "我没有负责分工，只记录了会议纪要。",
+      "fabricated_quote": "我负责分工",
+      "review_focus": "核对否定范围；短语出现不等于本人完成了行动。"
+    },
+    {
+      "case_id": "reported_action",
+      "question_id": "leadership_F3_Q1",
+      "transcript": "队友说他负责分工，我只记录了会议纪要。",
+      "fabricated_quote": "我负责分工",
+      "review_focus": "区分本人行动、他人行动和转述，不能替换主语。"
+    },
+    {
+      "case_id": "numeric_constraints",
+      "question_id": "results_K6",
+      "transcript": "目标是10000人，两周已完成20%，也就是2000人，剩余8000人；预算不能增加。",
+      "fabricated_quote": "两周已完成80%",
+      "review_focus": "保留数值、单位、已完成与剩余、时间和预算限制；数值存在不代表方案完整。"
+    },
+    {
+      "case_id": "vague_answer",
+      "question_id": "leadership_F3_Q1",
+      "transcript": "我会努力沟通，争取把事情做好。",
+      "fabricated_quote": "我每天给三名同学分配任务并检查进度",
+      "review_focus": "泛泛承诺不能被扩写成已发生的具体行为；是否足以评分需另行判断。"
+    },
+    {
+      "case_id": "specific_behavior_without_keyword",
+      "question_id": "leadership_F3_Q1",
+      "transcript": "我让小王查数据，让小李核算费用，每天下午一起检查完成情况。",
+      "fabricated_quote": "任务全部按期完成",
+      "review_focus": "具体动作可没有词表中的分工二字；行动存在不允许编造成果。"
+    },
+    {
+      "case_id": "hypothetical_plan",
+      "question_id": "results_K6",
+      "transcript": "我会先比较各渠道成本，再用三天测试两种方案，每天检查新增人数。",
+      "fabricated_quote": "我已经用三天完成测试",
+      "review_focus": "情景题的未来方案不能改成已发生业绩，也不能因没有真实结果自动给低分。"
+    }
+  ]
+}
